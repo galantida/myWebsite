@@ -1,0 +1,124 @@
+﻿html {
+    background: url("media/blueprintRvs.jpg");
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #CCCCFF;
+    text-transform: uppercase;
+}
+
+body {
+    margin-top: 25px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+}
+
+.imageFrame {
+    padding: 1px;
+    border: 1px solid #3333FF;
+    background-color: #CCCCFF;
+}
+
+a:link {
+    font-weight: bold;
+    color: #CCCCFF;
+    text-decoration: none;
+}
+
+a:visited {
+    font-weight: bold;
+    color: #CCCCFF;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #CCCCFF;
+    text-decoration: underline;
+}
+
+a:active {
+    font-weight: bold;
+    color: #CCCCFF;
+    text-decoration: none;
+}
+.logoText {
+    color: rgb(204,204,255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logoTextRvs {
+    color: rgb(28,85,154);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading4 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading3 {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading2 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading1 {
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.banner3 {
+    font-family: Verdana;
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+}
+
+.banner2 {
+    font-family: Verdana;
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 5px;
+}
+
+.banner1 {
+    font-family: Verdana;
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 5px;
+}
+
+.bannerRvs {
+    color: rgb(28,85,154);
+    background-color: rgb(204,204,255);
+}
+
+.contactIcons {
+    width:32px;
+    height:32px;
+}
+
+.padded {
+    padding: 10px;
+}
+.bordered {
+    border: 2px solid #7676FF;
+    border-color: #CCCCFF;
+}
+.margined {
+    margin: 10px;
+}
+

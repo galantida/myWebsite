@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="javascript/XHRRequestManager.js"></script>
+    <script src="javascript/Templates.js"></script>
+    <script src="javascript/Template.js"></script>
+    <script src="javascript/Project.js"></script>
+    <script src="javascript/Projects.js"></script>
+    <script src="javascript/ContentLibrary.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var projects = [];
+
+        var templates = new Templates();
+        var projects = new Projects();
+
+        function loadPage() {
+            loadTemplates();
+        }
+
+        function loadTemplates() {
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html"];
+            templates.loadTemplates(templateList, loadContent);
+        }
+
+        function loadContent() {
+            projects.loadProjectsByIndexFile("content/index.json", displayPage);
+        }
+
+        function displayPage() {
+            // display contentless templates
+            document.getElementById("header").innerHTML = templates.getTemplate("header").template;
+            document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
+
+            // display content
+            var template = templates.getTemplate("projectThumb");
+            var content = projects.getProject("OculusRiftStand").content;
+            console.log(content);
+            var html = template.populated(content);
+
+            for (var t = 0; t < 6; t++) {
+                document.getElementById("projectThumb" + t).innerHTML = html;
+            }
+
+            document.body.style.visibility = "visible";
+        }
+    </script>
+</head>
+<body style="visibility:hidden;">
+    <div id="header" class="padded bordered bannerRvs"></div>
+
+    <!-- page top -->
+    <div class="padded" style="margin-top:20px;">
+
+        <font class="heading3">Company Tag Line<br /></font>
+        <table style="width:100%;">
+            <tr class="bordered">
+                <td style="width:100%;" valign="top">
+                    <div style="overflow:hidden;height:200px;" class="padded">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br />
+                    </div>
+                </td>
+                <td style="width:25px;"></td>
+                <td>
+                    <video height="200px" controls autoplay class="imageFrame">
+                        <source src="media/cubeTest.mov" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- page content -->
+    <div style="margin-top:30px;">
+
+        <table style="width:100%;border-spacing: 0px;">
+            <tr>
+                <th class="banner1 bordered bannerRvs" >Programming</th>
+                <th class="banner1 bordered" align="left" width="20%"></th>
+                <td width="5%"></td>
+                <th class="banner1 bordered bannerRvs" >Electronics</th>
+                <th class="banner1 bordered" align="left" width="20%"></th>
+                <td width="5%"></td>
+                <th class="banner1 bordered bannerRvs" >3D</th>
+                <th class="banner1 bordered" align="left" width="30%">Printing</th>
+            </tr>
+            <tr>
+                <td class="padded" colspan="2">
+                    <div style="height:200px;overflow:hidden;">
+                        <div style="height:128px;background:url(media/programming.jpg);background-size:cover" class="imageFrame">
+
+                        </div>
+                        Design, Development, Testing & Deployment using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc...
+                    </div>
+                </td>
+                <td></td>
+                <td class="padded" colspan="2">
+                    <div style="height:200px;overflow:hidden;">
+                        <div style="height:128px;background:url(media/electronics.jpg);background-size:cover" class="imageFrame">
+
+                        </div>
+                        Schematics, Circuit Design, Testing, Board Layout and Building.
+                    </div>
+                </td>
+                <td></td>
+                <td class="padded" colspan="2">
+                    <div style="height:200px;overflow:hidden;">
+                        <div style="height:128px;background:url(media/3DPrinting.jpg);background-size:cover" class="imageFrame">
+
+                        </div>
+                        3D Printing with PLA, wood or metal working. What ever it takes to create a finished programming or electronics project.
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Projects -->
+        <table style="margin-top:30px;width:100%;border-spacing: 0px;">
+            <tr>
+                <th colspan="5" class="banner3 bordered banner"><a href="projects.html" style="text-decoration:none;">Projects</a></th>
+            </tr>
+            <tr>
+                <td>
+                    <span id="projectThumb0"></span>
+                    <span id="projectThumb1"></span>
+                    <span id="projectThumb2"></span>
+                </td>
+                <td></td>
+                <td>
+                    <span id="projectThumb3"></span>
+                    <span id="projectThumb4"></span>
+                    <span id="projectThumb5"></span>
+                </td>
+                <td></td>
+                <td>
+                    Large area for something
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="footer" class="padded" style="margin-top:25px;"></div>
+
+</body>
+</html>
+<script>
+    loadPage();
+</script>

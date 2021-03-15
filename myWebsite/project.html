@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="javascript/utils.js"></script>
+    <script src="javascript/XHRRequestManager.js"></script>
+    <script src="javascript/Templates.js"></script>
+    <script src="javascript/Template.js"></script>
+    <script src="javascript/project.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        const queryString = window.location.search;
+        const params = new URLSearchParams(queryString);
+
+        var templates = new Templates();
+        var project = new Project();
+
+        function loadPage() {
+            loadTemplates();
+        }
+
+        function loadTemplates() {
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/entry.html", "templates/entryTitle.html", "templates/entryText.html", "templates/entryImage.html", "templates/entryThumbnail.html", "templates/entryLink.html"];
+            templates.loadTemplates(templateList, loadContent);
+        }
+
+        function loadContent() {
+            // download cotnent
+            var projectName = params.get("name");
+            project.load("content/" + projectName + "/info.json", displayPage);
+        }
+
+        function displayPage() {
+            // get content
+            var content = project.content;
+            console.log(content);
+
+            // display contentless templates
+            document.getElementById("header").innerHTML = templates.getTemplate("header").template;
+            document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
+
+            // get template content
+            var entryTemplate = templates.getTemplate("entry");
+
+            // project title
+            var html = "<br/><center>";
+            html += "<font class=\"heading3\">" + content.title + "</font><br/>";
+
+            // project dates
+            var started = project.started();
+            var updated = project.updated();
+            if (started == updated) html += formatDate(started);
+            else html += formatDate(started) + " - " + formatDate(updated);
+            html += "</center><br>";
+
+            // project entries
+            for (var e = 0; e < content.entries.length; e++) {
+
+                content.entries[e].folder = content.folder; // add a folder property to the entry. used by images
+                var entryContent = {}; // create a content block for this entry
+
+                // check all the loaded templates
+                for (var t = 0; t < templates.templates.length; t++) {
+                    var subTemplate = templates.templates[t]; // get this template
+                    var searchContentName = subTemplate.name.replaceAll("entry", "").toLowerCase();
+
+                    // set the default display for this template to nothing
+                    entryContent[subTemplate.name + ".html"] = "";
+
+                    // if the templates namesake exists process and set to display
+                    if (content.entries[e][searchContentName] != null) {
+                        entryContent[subTemplate.name + ".html"] = subTemplate.populated(content.entries[e]);
+                    }
+                }
+
+                // reaplce all template tags with their templates. e.g. [template.html]
+                html += entryTemplate.populated(entryContent);
+            }
+            document.getElementById("content").innerHTML = html;
+
+            document.body.style.visibility = "visible";
+        }
+    </script>
+</head>
+<body style="visibility:hidden;">
+    <div id="header" class="padded bordered bannerRvs" style="margin-bottom:25px;"></div>
+
+    <div id="content"></div>
+
+    <div id="footer" class="padded" style="margin-top:25px;clear:both;"></div>
+</body>
+</html>
+<script>
+    loadPage();
+</script>

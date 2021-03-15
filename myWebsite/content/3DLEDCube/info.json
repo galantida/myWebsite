@@ -1,0 +1,39 @@
+﻿{
+  "folder": "OculusRiftStand",
+  "title": "Oculus Rift Display Stand",
+  "name": "VR Display Stand",
+  "started": "2/20/21",
+  "updated": "2/20/21",
+  "status": "complete",
+  "description": "3D Printed a stand to keep my VR headset and controlers safe.",
+  "images": [
+    {
+      "file": "image1.jpeg",
+      "title": "Side View",
+      "description": "Side view with VR headset.",
+      "cover": true
+    },
+    {
+      "file": "image2.jpeg",
+      "title": "Front View Looking Down",
+      "description": "Front view looking down with VR headset."
+    },
+    {
+      "file": "image3.jpeg",
+      "title": "Front View",
+      "description": "Front view with VR headset."
+    }
+  ],
+  "blog": [
+    "This is the first paragraph you would see in the blog write up",
+    "This is the second paragraph in the block write up."
+  ],
+  "credits": [
+    {
+      "name": "person to credit",
+      "url": "",
+      "emailAddress": "",
+      "notes": ""
+    }
+  ]
+}
