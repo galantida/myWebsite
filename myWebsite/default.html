@@ -21,7 +21,7 @@
         }
 
         function loadTemplates() {
-            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html", "templates/projectHighlight.html"];
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html", "templates/projectHighlight.html", "templates/category.html"];
             templates.loadTemplates(templateList, loadContent);
         }
 
@@ -34,13 +34,24 @@
             document.getElementById("header").innerHTML = templates.getTemplate("header").template;
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
+            // display categories
+            var programming = { "firstName": "Programming", "secondName": "", "backgroundImageURL": "media/programmingd.jpg", "description": "Design, Develop, Test & Deploy using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc..." };
+            document.getElementById("category1").innerHTML = templates.getTemplate("category").populated(programming);
+
+            var electronics = { "firstName": "Electronics", "secondName": "", "backgroundImageURL": "media/electronicsd.jpg", "description": "Schematics, Circuit Design, Testing, Board Layout and Building." };
+            document.getElementById("category2").innerHTML = templates.getTemplate("category").populated(electronics);
+
+            var fred = { "firstName": "3D", "secondName": "Printing", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Misc. projects like 3D Printing, wood working or whatever else is needed." };
+            document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
+
+
             // display content
             var template = templates.getTemplate("projectThumb");
             var content = projects.getProject("OculusRiftStand").content;
             console.log(content);
             var html = template.populated(content);
 
-            for (var t = 0; t < 6; t++) {
+            for (var t = 0; t < 4; t++) {
                 document.getElementById("projectThumb" + t).innerHTML = html;
             }
 
@@ -53,121 +64,73 @@
         }
     </script>
 </head>
-<body style="visibility:hidden;min-width:700px;">
-    <div id="header" class="padded bordered bannerRvs"></div>
+<body style="visibility:hidden;">
 
-    <!-- page top -->
-    <div class="padded" style="margin-top:20px;">
+        <div class="siteContainer">
 
-        <font class="heading3">Company Tag Line<br /></font>
-        <table style="width:100%;">
-            <tr class="bordered">
-                <td style="width:100%;" valign="top">
-                    <div style="overflow:hidden;height:200px;" class="padded">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br />
-                    </div>
-                </td>
-                <td style="width:25px;"></td>
-                <td>
-                    <video height="200px" controls autoplay class="imageFrame">
+            <div id="header"></div>
+
+            <!-- page top -->
+            <div class="padded" style="margin-top:5%;">
+                <div style="float:right;">
+                    <video height="200px;" controls autoplay class="imageFrame">
                         <source src="media/cubeTest.mov" type="video/mp4">
                     </video>
-                </td>
-            </tr>
-        </table>
+                </div>
+                <div style="overflow:hidden;height:175px;" class="padded">
+                    <font class="heading3">Company Tag Line</font><br />
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br />
+                </div>
+            </div>
 
-    </div>
+            <!-- page content -->
+            <div style="margin-top:5%;width:100%;">
 
-    <!-- page content -->
-    <div style="margin-top:30px;width:100%;">
+                <!-- categories-->
+                <div style="clear:both;"></div>
+                <div id="category1"></div>
+                <div id="category2"></div>
+                <div id="category3"></div>
 
-        <table style="width:100%;border-spacing: 0px;">
-            <tr>
-                <th class="banner1 bordered bannerRvs" >Programming</th>
-                <th class="banner1 bordered" align="left" width="20%"></th>
-                <td width="5%"></td>
-                <th class="banner1 bordered bannerRvs" >Electronics</th>
-                <th class="banner1 bordered" align="left" width="20%"></th>
-                <td width="5%"></td>
-                <th class="banner1 bordered bannerRvs" >3D</th>
-                <th class="banner1 bordered" align="left" width="30%">Printing</th>
-            </tr>
-            <tr>
-                <td class="padded" colspan="2">
-                    <div style="height:200px;overflow:hidden;">
-                        <div style="height:128px;background:url(media/programming.jpg);background-size:cover" class="imageFrame">
+                <!-- projects -->
+                <div style="clear:both;"></div>
+                <div class="banner bordered" style="padding:5px;margin-top:5%;"><a href="projects.html" style="text-decoration:none;">Projects</a></div>
 
-                        </div>
-                        Design, Development, Testing & Deployment using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc...
-                    </div>
-                </td>
-                <td></td>
-                <td class="padded" colspan="2">
-                    <div style="height:200px;overflow:hidden;">
-                        <div style="height:128px;background:url(media/electronics.jpg);background-size:cover" class="imageFrame">
-
-                        </div>
-                        Schematics, Circuit Design, Testing, Board Layout and Building.
-                    </div>
-                </td>
-                <td></td>
-                <td class="padded" colspan="2">
-                    <div style="height:200px;overflow:hidden;">
-                        <div style="height:128px;background:url(media/3DPrinting.jpg);background-size:cover" class="imageFrame">
-
-                        </div>
-                        3D Printing with PLA, wood or metal working. What ever it takes to create a finished programming or electronics project.
-                    </div>
-                </td>
-            </tr>
-        </table>
-
-        <!-- Projects -->
-        <table style="margin-top:30px;width:100%;border-spacing: 0px;">
-            <tr>
-                <th colspan="5" class="banner3 bordered banner"><a href="projects.html" style="text-decoration:none;">Projects</a></th>
-            </tr>
-            <tr><td colpsan="5" style="margin-top:100px;"></td></tr>
-            <tr>
-                <td rowspan="4" >
+                <!-- highlight project -->
+                <div style="float:left;margin-top:2%;width:550px;">
                     <div id="projectBanner0"></div>
-                </td>
-                <td></td>
-                <td>
-                    <div class="banner1 bordered bannerRvs" style="text-align:center;margin:10px;">
-                        Recently Updated
-                    </div>
-                </td>
-                <td></td>
-                <td>
-                    <div class="banner1 bordered bannerRvs" style="text-align:center;margin:10px;">
-                        Featured Projects
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><div id="projectThumb0"></div></td>
-                <td></td>
-                <td><div id="projectThumb3"></div></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><div id="projectThumb1"></div></td>
-                <td></td>
-                <td><div id="projectThumb4"></div></td>
+                </div>
 
-            </tr>
-            <tr>
-                <td></td>
-                <td><div id="projectThumb2"></div></td>
-                <td></td>
-                <td><div id="projectThumb5"></div></td>
-            </tr>
-        </table>
-    </div>
+                <!-- project listing -->
+                <div style="width:550px;float:left;margin-top:1%;padding:5px;">
 
-    <div id="footer" class="padded" style="margin-top:25px;"></div>
+                    <!-- Recent -->
+                    <div style="float:left;">
+                        <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
+                            Recently Updated
+                        </div>
+                        <div id="projectThumb0"></div>
+                        <div id="projectThumb1"></div>
+                    </div>
+
+                    <!-- Featured -->
+                    <div style="float:left;">
+                        <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
+                            Featured Projects
+                        </div>
+                        <div id="projectThumb2"></div>
+                        <div id="projectThumb3"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <div style="clear:both;"></div>
+            <div id="footer" style="margin-top:5%;"></div>
+
+        </div>
 
 </body>
 </html>

@@ -73,6 +73,7 @@
     <Content Include="javascript\Projects.js" />
     <Content Include="javascript\utils.js" />
     <Content Include="styles.css" />
+    <Content Include="templates\category.html" />
     <Content Include="templates\entryLink.html" />
     <Content Include="templates\entryThumbnail.html" />
     <Content Include="templates\entryImage.html" />

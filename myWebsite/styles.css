@@ -1,24 +1,26 @@
 ﻿html {
     background: url("media/blueprintRvs.jpg");
-    font-family: Verdana;
-    font-size: 10pt;
+    font-family: 'Courier New';
+    font-size: 12pt;
     color: #CCCCFF;
-    text-transform: uppercase;
+    font-weight: 500;
 }
-
 body {
     margin-top: 25px;
-    margin-left:50px;
-    margin-right:50px;
-    margin-bottom:50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
 }
-
+.siteContainer {
+    min-width: 540px;
+    max-width: 1140px;
+    margin: auto;
+}
 a:link {
     font-weight: bold;
     color: #CCCCFF;
     text-decoration: none;
 }
-
 a:visited {
     font-weight: bold;
     color: #CCCCFF;
@@ -43,36 +45,47 @@ a:active {
     padding: 10px;
 }
 
+.margined {
+    margin: 10px;
+}
+
 .bordered {
     border: 2px solid #7676FF;
     border-color: #CCCCFF;
 }
-
-.margined {
-    margin: 10px;
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
 /* Standard fonts
 ----------------------------------------------------------*/
 .heading4 {
-    font-size: 16pt;
+    font-family: 'Courier New';
+    font-size: 18pt;
     font-weight: bold;
     text-transform: uppercase;
 }
 .heading3 {
-    font-size: 14pt;
+    font-family: 'Courier New';
+    font-size: 16pt;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .heading2 {
-    font-size: 12pt;
+    font-family: 'Courier New';
+    font-size: 14pt;
     font-weight: bold;
     text-transform: uppercase;
 }
 .heading1 {
-    font-size: 10pt;
+    font-family: 'Courier New';
+    font-size: 12pt;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -96,26 +109,7 @@ a:active {
 
 /* Site Banners (like headings)
 ----------------------------------------------------------*/
-.banner3 {
-    font-family: Verdana;
-    font-size: 16pt;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0px;
-    padding: 5px;
-    text-align: left;
-}
-
-.banner2 {
-    font-family: Verdana;
-    font-size: 14pt;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0px;
-    padding: 5px;
-}
-
-.banner1 {
+.banner {
     font-family: Verdana;
     font-size: 12pt;
     font-weight: bold;
@@ -142,12 +136,14 @@ a:active {
     color: rgb(204,204,255);
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Courier New';
 }
 
 .logoTextRvs {
     color: rgb(28,85,154);
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Courier New';
 }
 
 
