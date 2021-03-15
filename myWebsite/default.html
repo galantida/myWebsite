@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
     <title></title>
     <script src="javascript/XHRRequestManager.js"></script>
     <script src="javascript/Templates.js"></script>
     <script src="javascript/Template.js"></script>
     <script src="javascript/Project.js"></script>
     <script src="javascript/Projects.js"></script>
-    <script src="javascript/ContentLibrary.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
         var projects = [];
@@ -21,7 +21,7 @@
         }
 
         function loadTemplates() {
-            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html"];
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html", "templates/projectHighlight.html"];
             templates.loadTemplates(templateList, loadContent);
         }
 
@@ -44,11 +44,16 @@
                 document.getElementById("projectThumb" + t).innerHTML = html;
             }
 
+            var template = templates.getTemplate("projectHighlight");
+            var mostRecentProject = projects.getMostRecentProject();
+            document.getElementById("projectBanner0").innerHTML = template.populated(mostRecentProject.content);
+
+
             document.body.style.visibility = "visible";
         }
     </script>
 </head>
-<body style="visibility:hidden;">
+<body style="visibility:hidden;min-width:700px;">
     <div id="header" class="padded bordered bannerRvs"></div>
 
     <!-- page top -->
@@ -74,7 +79,7 @@
     </div>
 
     <!-- page content -->
-    <div style="margin-top:30px;">
+    <div style="margin-top:30px;width:100%;">
 
         <table style="width:100%;border-spacing: 0px;">
             <tr>
@@ -122,22 +127,42 @@
             <tr>
                 <th colspan="5" class="banner3 bordered banner"><a href="projects.html" style="text-decoration:none;">Projects</a></th>
             </tr>
+            <tr><td colpsan="5" style="margin-top:100px;"></td></tr>
             <tr>
-                <td>
-                    <span id="projectThumb0"></span>
-                    <span id="projectThumb1"></span>
-                    <span id="projectThumb2"></span>
+                <td rowspan="4" >
+                    <div id="projectBanner0"></div>
                 </td>
                 <td></td>
                 <td>
-                    <span id="projectThumb3"></span>
-                    <span id="projectThumb4"></span>
-                    <span id="projectThumb5"></span>
+                    <div class="banner1 bordered bannerRvs" style="text-align:center;margin:10px;">
+                        Recently Updated
+                    </div>
                 </td>
                 <td></td>
                 <td>
-                    Large area for something
+                    <div class="banner1 bordered bannerRvs" style="text-align:center;margin:10px;">
+                        Featured Projects
+                    </div>
                 </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="projectThumb0"></div></td>
+                <td></td>
+                <td><div id="projectThumb3"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="projectThumb1"></div></td>
+                <td></td>
+                <td><div id="projectThumb4"></div></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="projectThumb2"></div></td>
+                <td></td>
+                <td><div id="projectThumb5"></div></td>
             </tr>
         </table>
     </div>

@@ -8,6 +8,7 @@
     <script src="javascript/Templates.js"></script>
     <script src="javascript/Template.js"></script>
     <script src="javascript/project.js"></script>
+    <script src="javascript/imagePresenter.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
         const queryString = window.location.search;
@@ -58,18 +59,17 @@
             for (var e = 0; e < content.entries.length; e++) {
 
                 content.entries[e].folder = content.folder; // add a folder property to the entry. used by images
-                var entryContent = {}; // create a content block for this entry
+                var entryContent = {}; // create a content object for this entry
 
                 // check all the loaded templates
                 for (var t = 0; t < templates.templates.length; t++) {
                     var subTemplate = templates.templates[t]; // get this template
                     var searchContentName = subTemplate.name.replaceAll("entry", "").toLowerCase();
 
-                    // set the default display for this template to nothing
-                    entryContent[subTemplate.name + ".html"] = "";
-
-                    // if the templates namesake exists process and set to display
+                    // find and use a template whos name matches the property name
+                    entryContent[subTemplate.name + ".html"] = ""; // clear template display
                     if (content.entries[e][searchContentName] != null) {
+                        // if the templates namesake exists process and set to display
                         entryContent[subTemplate.name + ".html"] = subTemplate.populated(content.entries[e]);
                     }
                 }
@@ -89,6 +89,16 @@
     <div id="content"></div>
 
     <div id="footer" class="padded" style="margin-top:25px;clear:both;"></div>
+
+
+    <!-- Image Presenter Code (used to display image overlay) -->
+    <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
+        <div class="divExpandedImage">
+            <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
+
+        </div>
+    </div>
+
 </body>
 </html>
 <script>

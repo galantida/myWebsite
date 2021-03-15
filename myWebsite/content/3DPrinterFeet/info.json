@@ -1,39 +1,31 @@
 ﻿{
-  "folder": "OculusRiftStand",
-  "title": "Oculus Rift Display Stand",
-  "name": "VR Display Stand",
-  "started": "2/20/21",
-  "updated": "2/20/21",
+  "title": "3D Printer Feet",
+  "description": "Save desk space, store my tools underneath.",
   "status": "complete",
-  "description": "3D Printed a stand to keep my VR headset and controlers safe.",
-  "images": [
+  "tags": [ "3D Printing" ],
+  "entries": [
     {
-      "file": "image1.jpeg",
-      "title": "Side View",
-      "description": "Side view with VR headset.",
-      "cover": true
+      "title": null,
+      "text": "I combined teh feet from one model with the column top of another. Also yes the nails are glow in the dark.",
+      "image": "3DPrinting.jpeg",
+      "thumbnail": null,
+      "link": null,
+      "name": "Side View",
+      "date": "12/14/20"
     },
     {
-      "file": "image2.jpeg",
-      "title": "Front View Looking Down",
-      "description": "Front view looking down with VR headset."
+      "title": null,
+      "text": "IMG_0919.jpg",
+      "image": null,
+      "date": "12/14/20"
     },
     {
-      "file": "image3.jpeg",
-      "title": "Front View",
-      "description": "Front view with VR headset."
-    }
-  ],
-  "blog": [
-    "This is the first paragraph you would see in the blog write up",
-    "This is the second paragraph in the block write up."
-  ],
-  "credits": [
-    {
-      "name": "person to credit",
-      "url": "",
-      "emailAddress": "",
-      "notes": ""
+      "title": null,
+      "text": "I use it to find everything",
+      "image": null,
+      "link": "https://google.com",
+      "name": "Thingiverse",
+      "date": "2/14/21"
     }
   ]
 }

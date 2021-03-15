@@ -13,12 +13,6 @@ body {
     margin-bottom:50px;
 }
 
-.imageFrame {
-    padding: 1px;
-    border: 1px solid #3333FF;
-    background-color: #CCCCFF;
-}
-
 a:link {
     font-weight: bold;
     color: #CCCCFF;
@@ -42,16 +36,25 @@ a:active {
     color: #CCCCFF;
     text-decoration: none;
 }
-.logoText {
-    color: rgb(204,204,255);
-    font-weight: bold;
-    text-transform: uppercase;
+
+/* Standard spacing and positioning
+----------------------------------------------------------*/
+.padded {
+    padding: 10px;
 }
-.logoTextRvs {
-    color: rgb(28,85,154);
-    font-weight: bold;
-    text-transform: uppercase;
+
+.bordered {
+    border: 2px solid #7676FF;
+    border-color: #CCCCFF;
 }
+
+.margined {
+    margin: 10px;
+}
+
+
+/* Standard fonts
+----------------------------------------------------------*/
 .heading4 {
     font-size: 16pt;
     font-weight: bold;
@@ -73,6 +76,26 @@ a:active {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+/* Standard Image Styles
+----------------------------------------------------------*/
+.divImagePresenterDisplay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    text-align: center;
+}
+
+.imageFrame {
+    padding: 1px;
+    border: 1px solid #3333FF;
+    background-color: #CCCCFF;
+}
+
+
+/* Site Banners (like headings)
+----------------------------------------------------------*/
 .banner3 {
     font-family: Verdana;
     font-size: 16pt;
@@ -106,19 +129,25 @@ a:active {
     background-color: rgb(204,204,255);
 }
 
+/* Footer Styles
+----------------------------------------------------------*/
 .contactIcons {
     width:32px;
     height:32px;
 }
 
-.padded {
-    padding: 10px;
+/* Header Styles
+----------------------------------------------------------*/
+.logoText {
+    color: rgb(204,204,255);
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.bordered {
-    border: 2px solid #7676FF;
-    border-color: #CCCCFF;
+
+.logoTextRvs {
+    color: rgb(28,85,154);
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.margined {
-    margin: 10px;
-}
+
 

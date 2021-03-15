@@ -43,10 +43,12 @@
     Project.prototype.updated = function () {
         // get date range
         var updated = new Date("1/1/1800");
-        for (var e = 0; e < this.content.entries.length; e++) {
-            if (this.content.entries[e].date) {
-                var curDate = new Date(this.content.entries[e].date);
-                if (curDate > updated) updated = curDate;
+        if (this.content.entries) {
+            for (var e = 0; e < this.content.entries.length; e++) {
+                if (this.content.entries[e].date) {
+                    var curDate = new Date(this.content.entries[e].date);
+                    if (curDate > updated) updated = curDate;
+                }
             }
         }
 

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.html" />
+    <Content Include="javascript\ImagePresenter.js" />
     <Content Include="javascript\Project.js" />
     <Content Include="javascript\Projects.js" />
     <Content Include="javascript\utils.js" />
@@ -80,6 +81,7 @@
     <Content Include="templates\footer.html" />
     <Content Include="templates\header.html" />
     <Content Include="templates\entryText.html" />
+    <Content Include="templates\projectHighlight.html" />
     <Content Include="templates\projectThumb.html" />
     <Content Include="templates\projectBanner.html" />
     <Content Include="javascript\Template.js" />

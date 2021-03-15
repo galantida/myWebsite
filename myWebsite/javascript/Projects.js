@@ -51,4 +51,18 @@
         }
         return null;
     }
+
+    Projects.prototype.getMostRecentProject = function () {
+        var mostRecentProject = null;
+        var mostRecentUpdated = new Date("1/1/1800");
+        
+        for (var t = 0; t < this.projects.length; t++) {
+            var curUpdated = this.projects[t].updated();
+            if (curUpdated > mostRecentUpdated) {
+                mostRecentUpdated = curUpdated;
+                mostRecentProject = this.projects[t];
+            }
+        }
+        return mostRecentProject;
+    }
 }
