@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
     <title></title>
     <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
@@ -84,19 +85,23 @@
     </script>
 </head>
 <body style="visibility:hidden;">
-    <div id="header" class="padded bordered bannerRvs" style="margin-bottom:25px;"></div>
+    <div class="siteContainer">
 
-    <div id="content"></div>
+        <div id="header" class="padded bordered bannerRvs" style="margin-bottom:25px;"></div>
 
-    <div id="footer" class="padded" style="margin-top:25px;clear:both;"></div>
+        <div id="content"></div>
+
+        <div id="footer" class="padded" style="margin-top:25px;clear:both;"></div>
 
 
-    <!-- Image Presenter Code (used to display image overlay) -->
-    <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
-        <div class="divExpandedImage">
-            <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
+        <!-- Image Presenter Code (used to display image overlay) -->
+        <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
+            <div class="divExpandedImage">
+                <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
 
+            </div>
         </div>
+
     </div>
 
 </body>

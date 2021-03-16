@@ -2,7 +2,7 @@
     background: url("media/blueprintRvs.jpg");
     font-family: 'Courier New';
     font-size: 12pt;
-    color: #CCCCFF;
+    color: #EEEEFF; /* font color */
     font-weight: 500;
 }
 body {
@@ -17,25 +17,20 @@ body {
     margin: auto;
 }
 a:link {
-    font-weight: bold;
-    color: #CCCCFF;
+    color: #EEEEFF;
     text-decoration: none;
 }
 a:visited {
-    font-weight: bold;
-    color: #CCCCFF;
+    color: #EEEEFF;
     text-decoration: none;
 }
-
 a:hover {
-    font-weight: bold;
-    color: #CCCCFF;
+    color: #EEEEFF;
     text-decoration: underline;
 }
 
 a:active {
-    font-weight: bold;
-    color: #CCCCFF;
+    color: #EEEEFF;
     text-decoration: none;
 }
 
@@ -51,7 +46,7 @@ a:active {
 
 .bordered {
     border: 2px solid #7676FF;
-    border-color: #CCCCFF;
+    border-color: #CCCCFF; /* font color */
 }
 .vertical-center {
     margin: 0;
@@ -102,7 +97,7 @@ a:active {
 
 .imageFrame {
     padding: 1px;
-    border: 1px solid #3333FF;
+    border: 1px solid #1C559A; /* text on font color background */
     background-color: #CCCCFF;
 }
 
@@ -119,8 +114,8 @@ a:active {
 }
 
 .bannerRvs {
-    color: rgb(28,85,154);
-    background-color: rgb(204,204,255);
+    color: #1C559A; 
+    background-color: #CCCCFF; 
 }
 
 /* Footer Styles
@@ -133,17 +128,24 @@ a:active {
 /* Header Styles
 ----------------------------------------------------------*/
 .logoText {
-    color: rgb(204,204,255);
+    color: #1C559A; /* text on font color background */
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Courier New';
 }
 
 .logoTextRvs {
-    color: rgb(28,85,154);
+    color: #1C559A;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Courier New';
 }
+
+@media (min-width: 1200px) {
+    .floatOnSize {
+        float: left;
+    }
+}
+
 
 
