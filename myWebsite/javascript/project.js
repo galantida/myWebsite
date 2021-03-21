@@ -55,4 +55,32 @@
         if (updated != new Date("1/1/1800")) return updated;
         else return null;
     }
+
+    Project.prototype.search = function (searchString) {
+
+        searchString = searchString.toLowerCase();
+
+        // this could be more interesting
+        var searchTerms = searchString.split(',');
+
+        // search content
+        var count = 0;
+        for (var e = 0; e < this.content.entries.length; e++) {
+            count += search(searchTerms, this.content.entries[e].title);
+            count += search(searchTerms, this.content.entries[e].text);
+            count += search(searchTerms, this.content.entries[e].name);
+        }
+
+        // search tags
+        if (this.content.tags != null) {
+            var tagString = "";
+            for (var t = 0; t < this.content.tags.length; t++) {
+                for (var s = 0; s < searchTerms.length; s++) {
+                    if (this.content.tags[t].toLowerCase() == searchTerms[s]) count++;
+                }
+            }
+        }
+
+        return count;
+    }
 }

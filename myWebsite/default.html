@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-    <title></title>
+    <title>Code Studio</title>
+    <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
     <script src="javascript/Templates.js"></script>
     <script src="javascript/Template.js"></script>
@@ -11,8 +12,6 @@
     <script src="javascript/Projects.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
-        var projects = [];
-
         var templates = new Templates();
         var projects = new Projects();
 
@@ -35,29 +34,36 @@
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
             // display categories
-            var programming = { "firstName": "Programming", "secondName": "", "backgroundImageURL": "media/programmingd.jpg", "description": "Design, Develop, Test & Deploy using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc..." };
+            var programming = { "firstName": "Programming", "secondName": "", "searchString":"Programming", "backgroundImageURL": "media/programmingd.jpg", "description": "Design, Develop, Test & Deploy using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc..." };
             document.getElementById("category1").innerHTML = templates.getTemplate("category").populated(programming);
 
-            var electronics = { "firstName": "Electronics", "secondName": "", "backgroundImageURL": "media/electronicsd.jpg", "description": "Schematics, Circuit Design, Testing, Board Layout and Building." };
+            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronicsd.jpg", "description": "Schematics, Circuit Design, Testing, Board Layout and Building." };
             document.getElementById("category2").innerHTML = templates.getTemplate("category").populated(electronics);
 
-            var fred = { "firstName": "3D", "secondName": "Printing", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Misc. projects like 3D Printing, wood working or whatever else is needed." };
+            var fred = { "firstName": "3D", "secondName": "Printing", "searchString": "3D Printing", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Misc. projects like 3D Printing, wood working or whatever else is needed." };
             document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
 
-
             // display content
-            var template = templates.getTemplate("projectThumb");
-            var content = projects.getProject("OculusRiftStand").content;
-            console.log(content);
-            var html = template.populated(content);
 
-            for (var t = 0; t < 4; t++) {
-                document.getElementById("projectThumb" + t).innerHTML = html;
-            }
-
+            // display highlighted project
             var template = templates.getTemplate("projectHighlight");
             var mostRecentProject = projects.getMostRecentProject();
             document.getElementById("projectBanner0").innerHTML = template.populated(mostRecentProject.content);
+
+            // get thumb template
+            var projectThumbTemplate = templates.getTemplate("projectThumb");
+
+            // display featured projects
+            for (var t = 0; t < 2; t++) {
+                document.getElementById("featuredProject" + t).innerHTML = projectThumbTemplate.populated(projects.projects[t].content);
+            }
+
+            projects.sortByUpdated();
+
+            // display recent projects
+            for (var t = 0; t < 2; t++) {
+                document.getElementById("recentProject" + t).innerHTML = projectThumbTemplate.populated(projects.projects[t].content);
+            }
 
 
             document.body.style.visibility = "visible";
@@ -99,20 +105,20 @@
                 <div style="width:100%;position:relative;">
 
                     <!-- highlight project -->
-                    <div style="margin:auto;margin-top:2%;width:550px;" class="floatOnSize">
+                    <div style="margin:auto;margin-top:2%;width:500px;" class="floatOnSize">
                         <div id="projectBanner0"></div>
                     </div>
 
                     <!-- project listing -->
-                    <div style="width:550px;margin:auto;margin-top:1%;padding:5px;" class="floatOnSize">
+                    <div style="width:600px;margin:auto;margin-top:1%;padding:5px;" class="floatOnSize">
 
                         <!-- Recent -->
                         <div style="float:left;">
                             <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
                                 Recently Updated
                             </div>
-                            <div id="projectThumb0"></div>
-                            <div id="projectThumb1"></div>
+                            <div id="recentProject0"></div>
+                            <div id="recentProject1"></div>
                         </div>
 
                         <!-- Featured -->
@@ -120,8 +126,8 @@
                             <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
                                 Featured Projects
                             </div>
-                            <div id="projectThumb2"></div>
-                            <div id="projectThumb3"></div>
+                            <div id="featuredProject0"></div>
+                            <div id="featuredProject1"></div>
                         </div>
 
                     </div>
@@ -131,8 +137,7 @@
             </div>
 
             <!-- footer -->
-            <div style="clear:both;"></div>
-            <div id="footer" style="margin-top:5%;"></div>
+            <div id="footer"></div>
 
         </div>
 

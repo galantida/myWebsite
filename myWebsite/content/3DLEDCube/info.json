@@ -1,39 +1,50 @@
 ﻿{
-  "folder": "OculusRiftStand",
-  "title": "Oculus Rift Display Stand",
-  "name": "VR Display Stand",
-  "started": "2/20/21",
-  "updated": "2/20/21",
+  "title": "3D LED Cube",
+  "description": "3D LED Cube",
   "status": "complete",
-  "description": "3D Printed a stand to keep my VR headset and controlers safe.",
-  "images": [
+  "tags": [ "Electronics", "Arduino" ],
+  "entries": [
     {
-      "file": "image1.jpeg",
-      "title": "Side View",
-      "description": "Side view with VR headset.",
-      "cover": true
+      "title": "Never",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "image": "cubePic.jpg",
+      "thumbnail": null,
+      "link": null,
+      "name": "Side View",
+      "date": "1/14/19"
     },
     {
-      "file": "image2.jpeg",
-      "title": "Front View Looking Down",
-      "description": "Front view looking down with VR headset."
+      "title": null,
+      "text": "This is the first paragraph you would see in the blog write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "image": null,
+      "date": "1/14/19"
     },
     {
-      "file": "image3.jpeg",
-      "title": "Front View",
-      "description": "Front view with VR headset."
-    }
-  ],
-  "blog": [
-    "This is the first paragraph you would see in the blog write up",
-    "This is the second paragraph in the block write up."
-  ],
-  "credits": [
+      "title": "Sometimes",
+      "text": "This is the second paragraph in the block write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "image": null,
+      "date": null
+    },
     {
-      "name": "person to credit",
-      "url": "",
-      "emailAddress": "",
-      "notes": ""
+      "title": null,
+      "thumbnail": "Color Bars.jpg",
+      "name": "Side View",
+      "text": null,
+      "date": null
+    },
+    {
+      "title": "References and Credits",
+      "text": null,
+      "image": null,
+      "date": null
+    },
+    {
+      "title": null,
+      "text": "I use it to find everything",
+      "image": null,
+      "link": "https://google.com",
+      "name": "Thingiverse",
+      "date": "2/14/19"
     }
   ]
 }

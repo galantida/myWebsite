@@ -1,13 +1,16 @@
-﻿
-<div style="padding:10px;clear:both;border:1px solid transparent" onmouseover="this.style.border = '1px solid #CCCCFF';" onmouseout="this.style.border = '1px solid transparent';">
-    <a href="project.html?name=[name]" style="text-decoration:none;">
-        <div><font class="heading3">[title]</font></div>
-        <div style="padding:10px;float:right;">
-            <img src="content/[folder]/[entries.0.image]" style="width:125px;height:125px;" class="imageFrame" />
-        </div>
-        <div style="overflow:hidden;height:240px;">
-            [description]<br />
-            [entries.0.text]
-        </div>
-    </a>
+﻿<!-- projectHighlight.html -->
+<div style="padding:5px;clear:both;">
+    <div style="padding:5px;" class="selectBox" onmouseover="this.className='selectBoxSelected';" onmouseout="this.className='selectBox';">
+        <a href="project.html?name=[name]" style="text-decoration:none;">
+            <div><font class="heading3">[title]</font></div>
+            <div style="padding:10px;float:right;">
+                <img src="content/[folder]/[entries.0.image]" style="width:125px;height:125px;" class="imageFrame" />
+            </div>
+            <div style="overflow:hidden;height:240px;">
+                [description]<br />
+                [entries.0.text]
+            </div>
+        </a>
+    </div>
 </div>
+<!-- projectHighlight.html -->

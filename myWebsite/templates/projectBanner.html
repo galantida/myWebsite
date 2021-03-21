@@ -1,16 +1,17 @@
-﻿<a href="project.html?name=[name]" style="text-decoration:none;font-weight:normal;">
-    <table>
-        <tr>
-            <td style="padding:10px;">
+﻿<!-- projectBanner.html -->
+<div style="clear:both;"></div>
+<div style="padding:5px;">
+    <div style="padding:5px;" class="selectBox" onmouseover="this.className = 'selectBoxSelected';" onmouseout="this.className = 'selectBox';">
+        <a href="project.html?name=[name]" style="text-decoration:none;font-weight:normal;">
+            <div style="float:left;margin-right:5px;">
                 <img src="content/[folder]/[entries.0.image]" style="width:100px;height:100px;" class="imageFrame" />
-            </td>
-            <td valign="top" style="padding-top:10px;">
-                <div style="overflow:hidden;height:100px;">
-                    <font class="heading1">[title]</font><br />
-                    [description]<br />
-                    [entries.0.text]
-                </div>
-            </td>
-        </tr>
-    </table>
-</a>
+            </div>
+            <div style="height:104px;overflow:hidden;">
+                <font class="heading1">[title]</font><br />
+                [description]<br />
+                [entries.0.text]
+            </div>
+        </a>
+    </div>
+</div>
+<!-- projectBanner.html -->

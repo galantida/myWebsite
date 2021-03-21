@@ -53,16 +53,72 @@
     }
 
     Projects.prototype.getMostRecentProject = function () {
-        var mostRecentProject = null;
+        console.log("getMostRecentProject");
+        var projectIndex = this.getMostRecentProjectIndex();
+        return this.projects[projectIndex];
+    }
+
+    Projects.prototype.getMostRecentProjectIndex = function () {
+        console.log("getMostRecentProjectIndex");
+        var mostRecentProjectIndex = null;
         var mostRecentUpdated = new Date("1/1/1800");
-        
+
         for (var t = 0; t < this.projects.length; t++) {
             var curUpdated = this.projects[t].updated();
+            console.log("comparing: " + curUpdated + " to " + mostRecentUpdated);
             if (curUpdated > mostRecentUpdated) {
+                console.log("was newer");
                 mostRecentUpdated = curUpdated;
-                mostRecentProject = this.projects[t];
+                mostRecentProjectIndex = t;
             }
         }
-        return mostRecentProject;
+        return mostRecentProjectIndex;
+    }
+
+    Projects.prototype.sortByUpdated = function () {
+
+        var sortedProjects = [];
+
+        var emg = 0;
+
+        while (this.projects.length > 0) {
+            console.log("projectsLength" + this.projects.length);
+
+            // get most recent project index
+            var index = this.getMostRecentProjectIndex();
+            console.log("mostRecentProjectIndex" + index);
+
+            // add project to sorted list
+            sortedProjects[sortedProjects.length] = this.projects[index];
+            console.log("sortedLength" + sortedProjects.length);
+
+            // remove project from projects
+            console.log("index" + index);
+            if (index > -1) this.projects.splice(index, 1);
+
+            emg++;
+            if (emg > 100) break;
+        }
+
+        this.projects = sortedProjects;
+    }
+
+    Projects.prototype.search = function (searchString) {
+
+        // return all when no search is specified
+        if (searchString == null) {
+            return this.projects;
+        }
+
+        // loop thorugh each project and execute search
+        var filteredProjects = [];
+        for (var p = 0; p < this.projects.length; p++) {
+
+            // if there are no filters or the project matches the filters.
+            if (this.projects[p].search(searchString) > 0) {
+                filteredProjects[filteredProjects.length] = this.projects[p]
+            }
+        }
+        return filteredProjects;
     }
 }

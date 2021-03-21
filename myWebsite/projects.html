@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-    <title></title>
+    <title>Code Studio</title>
     <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
     <script src="javascript/Templates.js"></script>
@@ -28,39 +28,41 @@
         }
 
         function loadContent() {
+
             // download content
             projects.loadProjectsByIndexFile("content/index.json", displayPage);
         }
 
         function displayPage() {
-            // get content
-            var projectType = params.get("type");
 
             // display contentless templates
             document.getElementById("header").innerHTML = templates.getTemplate("header").template;
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
+
+            // content section
             var template = templates.getTemplate("projectBanner");
 
+            // get content
+            var filteredProjects = projects.search(params.get("searchString"));
+            
+            // display content
             var html = "";
-            for (var t = 0; t < projects.projects.length; t++) {
+            for (var t = 0; t < filteredProjects.length; t++) {
                 var content = projects.projects[t].content;
-
                 html += template.populated(content);
             }
-
             document.getElementById("content").innerHTML = html;
-
             document.body.style.visibility = "visible";
         }
     </script>
 </head>
 <body style="visibility:hidden;">
     <div class="siteContainer">
-        <div id="header" class="padded bordered bannerRvs" style="margin-bottom:25px;"></div>
+        <div id="header"></div>
 
         <div id="content"></div>
 
-        <div id="footer" class="padded" style="margin-top:25px;clear:both;"></div>
+        <div id="footer"></div>
     </div>
 </body>
 </html>
