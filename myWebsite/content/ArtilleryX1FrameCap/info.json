@@ -1,0 +1,33 @@
+﻿{
+  "title": "Frame Caps",
+  "description": "Sidewinder-X1 - Frame Caps",
+  "status": "complete",
+  "tags": [ "3D Print" ],
+  "entries": [
+    {
+      "title": "Learning How 3D Printing Could Be Useful",
+      "text": "Up to this point most of my 3D prints had been tests. Just getting my feet wet. This was the first time I printed something for actual use.",
+      "image": "image0.jpg",
+      "name": "Right Side",
+      "date": "8/5/20"
+    },
+	{
+	  "thumbnail": "image0.jpg",
+	  "name" : "Right Side",
+      "date": "8/5/20"
+    },
+	{
+	  "thumbnail": "image1.jpg",
+	  "name" : "Left Side",
+      "date": "8/5/20"
+    },
+    {
+      "title": null,
+      "text": "By Spiddek on Thingiverse",
+      "image": null,
+      "link": "https://www.thingiverse.com/thing:4139011",
+      "name": "Artillery Sidewinder-X1 - frame cap",
+      "date": "8/5/20"
+    }
+  ]
+}

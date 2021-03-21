@@ -1,29 +1,17 @@
 ﻿{
   "title": "Rift VR Stand",
-  "description": "3D Printed Oculus Rift Stand to keep my VR headset and controlers safe.",
+  "description": "Keep my VR headset and controlers safe.",
   "status": "complete",
   "tags": [ "3D Printing", "VR", "Gadgets" ],
   "entries": [
     {
-      "title": "Never",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "title": "New Largest Print",
+      "text": "I printed this even before my Headset was delivered. It took a total of about 30 hours even at a higer resolution.",
       "image": "image1.jpeg",
       "thumbnail": null,
       "link": null,
       "name": "Side View",
       "date": "1/14/21"
-    },
-    {
-      "title": null,
-      "text": "This is the first paragraph you would see in the blog write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-      "image": null,
-      "date": "1/14/21"
-    },
-    {
-      "title": "Sometimes",
-      "text": "This is the second paragraph in the block write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-      "image": null,
-      "date": null
     },
     {
       "title": null,
@@ -48,17 +36,11 @@
     },
     {
       "title": "References and Credits",
-      "text": null,
-      "image": null,
-      "date": null
     },
     {
-      "title": null,
-      "text": "I use it to find everything",
-      "image": null,
-      "link": "https://google.com",
-      "name": "Thingiverse",
-      "date": "2/14/21"
+      "link": "https://www.thingiverse.com/thing:4025967",
+      "name": "By Mike-vom-Mars on Thingiverse",
+      "date": "1/14/21"
     }
   ]
 }

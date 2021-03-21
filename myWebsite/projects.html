@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <title>Code Studio</title>
     <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
@@ -23,7 +24,7 @@
         }
 
         function loadTemplates() {
-            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectBanner.html"];
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html"];
             templates.loadTemplates(templateList, loadContent);
         }
 
@@ -40,11 +41,14 @@
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
             // content section
-            var template = templates.getTemplate("projectBanner");
+            var template = templates.getTemplate("projectThumb");
 
             // get content
-            var filteredProjects = projects.search(params.get("searchString"));
-            
+            var searchString = params.get("searchString");
+            var filteredProjects = projects.search(searchString);
+
+            if (searchString) document.getElementById("searchString").innerHTML = searchString;
+
             // display content
             var html = "";
             for (var t = 0; t < filteredProjects.length; t++) {
@@ -59,6 +63,13 @@
 <body style="visibility:hidden;">
     <div class="siteContainer">
         <div id="header"></div>
+
+        <div style="padding:5px;margin-top:10px;">
+            <div class="banner bordered" style="float:left;width:100%;padding:0px;">
+                <div class="banner bannerRvs" style="float:left;margin-right:5%;">Projects</div>
+                <div id="searchString" class="banner">All</div>
+            </div>
+        </div>
 
         <div id="content"></div>
 

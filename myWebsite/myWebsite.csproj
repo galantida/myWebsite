@@ -67,6 +67,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\2020Ornament\image3.jpeg" />
+    <Content Include="content\ArtilleryX1FrameCap\image0.jpg" />
+    <Content Include="content\ArtilleryX1FrameCap\image1.jpg" />
+    <Content Include="content\CatEars\alyx.jpg" />
+    <Content Include="content\CatEars\catEars2.jpg" />
+    <Content Include="content\CatEars\image7.jpg" />
+    <Content Include="content\CatEars\scott.jpg" />
+    <Content Include="content\Dumpster\image2.jpg" />
+    <Content Include="content\Dumpster\IMG_0630.jpg" />
+    <Content Include="content\maskStrapExtender\IMG_0646.jpg" />
+    <Content Include="content\Moai\image14.jpg" />
+    <Content Include="content\Moai\IMG_0638.jpg" />
+    <Content Include="content\moonStand\image0.jpeg" />
+    <Content Include="content\moonStand\image1.jpeg" />
+    <Content Include="content\moonStand\image10.jpeg" />
+    <Content Include="content\moonStand\image11.jpeg" />
+    <Content Include="content\moonStand\image12.jpeg" />
+    <Content Include="content\moonStand\image13.jpeg" />
+    <Content Include="content\moonStand\image14.jpeg" />
+    <Content Include="content\moonStand\image15.jpeg" />
+    <Content Include="content\moonStand\image16.jpeg" />
+    <Content Include="content\moonStand\image2.jpeg" />
+    <Content Include="content\moonStand\image3.jpeg" />
+    <Content Include="content\moonStand\image4.jpeg" />
+    <Content Include="content\moonStand\image5.jpeg" />
+    <Content Include="content\moonStand\image6.jpeg" />
+    <Content Include="content\moonStand\image7.jpeg" />
+    <Content Include="content\moonStand\image8.jpeg" />
+    <Content Include="content\moonStand\image9.jpeg" />
+    <Content Include="content\moonStand\model.png" />
+    <Content Include="content\moonStand\MoonStandSchematic.png" />
+    <Content Include="content\reindeer\image4.jpg" />
+    <Content Include="content\ropePullHandle\image12_2.jpg" />
+    <Content Include="content\StarWarsLogo\IMG_0626.jpg" />
     <Content Include="default.html" />
     <Content Include="javascript\ImagePresenter.js" />
     <Content Include="javascript\Project.js" />
@@ -100,6 +134,16 @@
     <Content Include="content\index.json" />
     <Content Include="content\3DLEDCube\info.json" />
     <Content Include="content\3DPrinterFeet\info.json" />
+    <Content Include="content\moonStand\info.json" />
+    <Content Include="content\Moai\info.json" />
+    <Content Include="content\maskStrapExtender\info.json" />
+    <Content Include="content\Dumpster\info.json" />
+    <Content Include="content\CatEars\info.json" />
+    <Content Include="content\ArtilleryX1FrameCap\info.json" />
+    <Content Include="content\2020Ornament\info.json" />
+    <Content Include="content\reindeer\info.json" />
+    <Content Include="content\ropePullHandle\info.json" />
+    <Content Include="content\StarWarsLogo\info.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,0 +1,33 @@
+﻿{
+  "title": "Dumpster",
+  "description": "Large Dumpter",
+  "status": "complete",
+  "tags": [ "3D Print" ],
+  "entries": [
+    {
+      "title": "Why a Dumpster",
+      "text": "A lot of people ask see my 3D printer and ask about the prints. I found my failed 3D prints were helpful in explaining how things are printed and what supports and infill patterns are. Most are invisible in the final product. I decided what better place could there be to store 3D printed junk then in a 3D printed dumpster.",
+      "image": "img_0630.jpg",
+      "name": "Completed Dumpster",
+      "date": "8/13/20"
+    },
+	{
+      "title": "About the Print",
+      "text": "At the time this was my largest 3D print. It took almost an entire spool of blue PLA and ran for about 36 hours. It also shifted a few times partway through the print. The caused a staggered stepping pattern between the layers. It was almost as if the belt slipped but they were on tight. In my opinion the steps were too regular to be a random slip so it seemed like a rounding issue. I had done a number of prints without rebooting the 3d printer and adding an additional thirty six hours on top of that is a very long time. I now make sure to reboot the machine every day or so and it hasn't happened since.",
+      "date": "8/13/20"
+    },
+	{
+	  "thumbnail": "image2.jpg",
+	  "name" : "In Use",
+      "date": "8/13/20"
+    },
+    {
+      "title": null,
+      "text": "By Simonarri on Thingiverse",
+      "image": null,
+      "link": "https://www.thingiverse.com/thing:950602",
+      "name": "Dumpster",
+      "date": "8/13/20"
+    }
+  ]
+}

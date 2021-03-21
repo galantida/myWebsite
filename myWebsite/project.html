@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <title>Code Studio</title>
     <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
@@ -42,7 +43,7 @@
             // get content
             var content = project.content;
             console.log(content);
-           document.title = content.title + " - Code Studio";
+            document.title = content.title + " - Code Studio";
 
             // get template content
             var entryTemplate = templates.getTemplate("entry");
@@ -54,8 +55,12 @@
             // project dates
             var started = project.started();
             var updated = project.updated();
-            if (started == updated) html += formatDate(started);
-            else html += formatDate(started) + " - " + formatDate(updated);
+            if (started.valueOf() == updated.valueOf()) html += formatDate(started);
+            else {
+                console.log(started);
+                console.log(updated);
+                html += formatDate(started) + " - " + formatDate(updated);
+            }
             html += "</center><br>";
 
             // project entries

@@ -1,0 +1,31 @@
+﻿{
+  "title": "Reindeer",
+  "description": "Small Jointed Reindeer Ornament",
+  "status": "complete",
+  "tags": [ "3D Print" ],
+  "entries": [
+    {
+      "title": null,
+      "text": "I originally wanted to print these in a wood grain but the filament kept getting stuck in the feeding tube and breaking. I am not sure if that is because my nozzle diameter was too small or what. I ordered some different nozzle sizes and plan on trying again with a larger opening.",
+      "image": "image4.jpg",
+      "name": "The Herd",
+      "date": "12/19/20"
+    },
+	    {
+      "text": "I only print these in blue because I had a lot of that color. I don't recommend doing this. This is not the type of model you can easily paint. The head and legs move, which makes it near impossible to get paint in all the joints. You end of seeing the unpainted PLA in the cracks.",
+      "date": "12/19/20"
+    },
+	    {
+      "text": "In the end, I love how they came out though. I don't normally paint my prints so I learned a lot about finish work on this.",
+      "date": "12/19/20"
+    },
+    {
+      "title": null,
+      "text": "By Shira on Thingiverse",
+      "image": null,
+      "link": "https://www.thingiverse.com/thing:1178347",
+      "name": "Small Jointed Reindeer",
+      "date": "12/19/20"
+    }
+  ]
+}

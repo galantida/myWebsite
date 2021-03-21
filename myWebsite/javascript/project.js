@@ -21,10 +21,25 @@
         this.content.name = name;
         this.content.folder = name;
 
+        this.content.coverImage = this.getCoverImage();
+
         // callers callback function. 
         this.callbackFunction();
     }
 
+    Project.prototype.getCoverImage = function () {
+
+        // use the specified project image if exists
+        if (this.content.image != null) return this.content.image; 
+
+        // find first image in content
+        for (var e = 0; e < this.content.entries.length; e++) {
+            if (this.content.entries[e].image != null) return this.content.entries[e].image;
+            if (this.content.entries[e].thumbnail != null) return this.content.entries[e].thumbnail;
+        }
+
+        // return no image?
+    }
 
     Project.prototype.started = function () {
         // get date range

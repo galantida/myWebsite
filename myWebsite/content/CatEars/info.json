@@ -1,0 +1,39 @@
+﻿{
+  "title": "Cat Ears",
+  "description": "Cat Ears for Studio 3 Headphone",
+  "status": "complete",
+  "tags": [ "3D Print" ],
+  "entries": [
+    {
+      "title": null,
+      "text": "I gave these to my daughter Alyx for Christmas. There is a limit to the colors you can get in straight PLA so I printed these in White and painted them. The first pair broke as soon as she expanded her headphones. I printed a second pair and increased the overall size by 50%. This made the mounts thicker and stronger. With the larger size I didn't want the fill pattern creeping in the supports so I also increased the wall thickness when generating the G-Code.",
+      "image": "image7.jpg",
+      "link": null,
+      "name": "Painted Ears",
+      "date": "12/15/20"
+    },
+	{
+      "thumbnail": "catEars2.jpg",
+	  "name" : "Cat Ears 2",
+      "date": "12/15/20"
+    },
+	{
+	  "thumbnail": "Scott.jpg",
+	  "name" : "Scott",
+      "date": "12/15/20"
+    },
+	{
+      "thumbnail": "Alyx.jpg",
+	  "name" : "Alyx",
+      "date": "12/15/20"
+    },
+    {
+      "title": null,
+      "text": "By Breeon on Thingiverse",
+      "image": null,
+      "link": "https://www.thingiverse.com/thing:3805370",
+      "name": "Cat Ears for Studio 3 Headphone",
+      "date": "12/15/20"
+    }
+  ]
+}

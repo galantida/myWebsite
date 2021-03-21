@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <title>Code Studio</title>
     <script src="javascript/utils.js"></script>
     <script src="javascript/XHRRequestManager.js"></script>
@@ -34,13 +35,13 @@
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
             // display categories
-            var programming = { "firstName": "Programming", "secondName": "", "searchString":"Programming", "backgroundImageURL": "media/programmingd.jpg", "description": "Design, Develop, Test & Deploy using Visual Studio, C#, C++, HTML, JavaScript, JSON, XML, etc..." };
+            var programming = { "firstName": "Programming", "secondName": "", "searchString": "Programming", "backgroundImageURL": "media/programmingd.jpg", "description": "Programming experiments in graphics and robotics." };
             document.getElementById("category1").innerHTML = templates.getTemplate("category").populated(programming);
 
-            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronicsd.jpg", "description": "Schematics, Circuit Design, Testing, Board Layout and Building." };
+            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronicsd.jpg", "description": "Electronic circuit design and prototypings experiments." };
             document.getElementById("category2").innerHTML = templates.getTemplate("category").populated(electronics);
 
-            var fred = { "firstName": "3D", "secondName": "Printing", "searchString": "3D Printing", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Misc. projects like 3D Printing, wood working or whatever else is needed." };
+            var fred = { "firstName": "3D", "secondName": "Modeling", "searchString": "3D Print", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "3D Modeling, Graphic Design and Printing." };
             document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
 
             // display content
@@ -54,15 +55,17 @@
             var projectThumbTemplate = templates.getTemplate("projectThumb");
 
             // display featured projects
-            for (var t = 0; t < 2; t++) {
-                document.getElementById("featuredProject" + t).innerHTML = projectThumbTemplate.populated(projects.projects[t].content);
+            var featured = [];
+            featured[0] = projects.getProject("moonStand");
+            featured[1] = projects.getProject("reindeer");
+            for (var t = 0; t < featured.length; t++) {
+                document.getElementById("featuredProjects").innerHTML += projectThumbTemplate.populated(featured[t].content);
             }
 
-            projects.sortByUpdated();
-
             // display recent projects
-            for (var t = 0; t < 2; t++) {
-                document.getElementById("recentProject" + t).innerHTML = projectThumbTemplate.populated(projects.projects[t].content);
+            projects.sortByUpdated();
+            for (var t = 0; t < 3; t++) {
+                document.getElementById("recentProjects").innerHTML += projectThumbTemplate.populated(projects.projects[t].content);
             }
 
 
@@ -117,8 +120,7 @@
                             <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
                                 Recently Updated
                             </div>
-                            <div id="recentProject0"></div>
-                            <div id="recentProject1"></div>
+                            <div id="recentProjects"></div>
                         </div>
 
                         <!-- Featured -->
@@ -126,8 +128,7 @@
                             <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
                                 Featured Projects
                             </div>
-                            <div id="featuredProject0"></div>
-                            <div id="featuredProject1"></div>
+                            <div id="featuredProjects"></div>
                         </div>
 
                     </div>

@@ -6,26 +6,23 @@
   "entries": [
     {
       "title": null,
-      "text": "I combined teh feet from one model with the column top of another. Also yes the nails are glow in the dark.",
-      "image": "3DPrinting.jpeg",
-      "thumbnail": null,
-      "link": null,
-      "name": "Side View",
-      "date": "12/14/20"
+      "text": "I combined the feet from one model with the column top of another. Also, yes, the nails are glow in the dark.",
+      "image": "IMG_0919.jpg",
+      "name": "Closeup",
+      "date": "1/22/21"
     },
     {
       "title": null,
-      "text": "IMG_0919.jpg",
-      "image": null,
-      "date": "12/14/20"
+      "thumbnail": "3DPrinting.jpg",
+	  "name": "Tool Storage",
+      "date": "1/22/21"
     },
     {
       "title": null,
-      "text": "I use it to find everything",
-      "image": null,
-      "link": "https://google.com",
-      "name": "Thingiverse",
-      "date": "2/14/21"
+      "text": "By johann517 on Thingiverse",
+      "link": "https://www.thingiverse.com/thing:2018801",
+      "name": "3D Printer Feet",
+      "date": "1/22/21"
     }
   ]
 }
