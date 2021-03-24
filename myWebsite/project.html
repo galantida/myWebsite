@@ -93,25 +93,29 @@
 </head>
 <body style="visibility:hidden;">
 
-    <div class="siteContainer">
+    <div class="marginContainer">
+        <div class="centeringContainer">
 
-        <div id="header"></div>
+            <div id="header"></div>
 
-        <div id="content"></div>
+            <div id="content"></div>
 
-        <!-- footer -->
-        <div id="footer"></div>
+            <!-- footer -->
+            <div id="footer"></div>
 
 
-        <!-- Image Presenter Code (used to display image overlay) -->
-        <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
-            <div class="divExpandedImage">
-                <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
+            <!-- Image Presenter Code (used to display image overlay) -->
+            <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
+                <div class="divExpandedImage">
+                    <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
 
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div> <!-- centering -->
+    </div> <!--margin-->
+    <!-- mobile Minimum Width -->
+    <div style="width:600px;visibility:hidden;">Mobile horizontal push out spacer</div>
 
 </body>
 </html>

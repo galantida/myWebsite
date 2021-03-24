@@ -6,12 +6,15 @@
     font-weight: 500;
 }
 body {
+    
+}
+.marginContainer {
     margin-top: 25px;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 50px;
 }
-.siteContainer {
+.centeringContainer {
     min-width: 540px;
     max-width: 1140px;
     margin: auto;

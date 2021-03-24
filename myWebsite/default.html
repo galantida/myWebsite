@@ -76,8 +76,11 @@
 </head>
 <body style="visibility:hidden;">
 
-        <div class="siteContainer">
+    <div class="marginContainer">
 
+        <div class="centeringContainer">
+
+            <!-- beaher -->
             <div id="header"></div>
 
             <!-- page top -->
@@ -92,7 +95,7 @@
             </div>
 
             <!-- page content -->
-            <div style="margin-top:5%;width:100%;">
+            <div style="margin-top:5px;width:100%;">
 
                 <!-- categories-->
                 <div style="clear:both;"></div>
@@ -102,29 +105,29 @@
 
                 <!-- projects -->
                 <div style="clear:both;"></div>
-                <div class="banner bordered" style="padding:5px;margin-top:5%;"><a href="projects.html" style="text-decoration:none;">Projects</a></div>
+                <div class="banner bordered" style="padding:10px;margin-top:5px;"><a href="projects.html" style="text-decoration:none;">Projects</a></div>
 
                 <div style="width:100%;position:relative;">
 
                     <!-- highlight project -->
-                    <div style="margin:auto;margin-top:2%;width:500px;" class="floatOnSize">
+                    <div style="max-width:540px;margin:auto;margin-top:5px;" class="floatOnSize">
                         <div id="projectBanner0"></div>
                     </div>
 
                     <!-- project listing -->
-                    <div style="width:600px;margin:auto;margin-top:1%;padding:5px;" class="floatOnSize">
+                    <div style="max-width:540px;margin:auto;margin-top:10px;" class="floatOnSize">
 
                         <!-- Featured -->
-                        <div style="float:left;">
-                            <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
+                        <div style="float:left;margin-right:4px;margin-top:5px;">
+                            <div class="banner bordered bannerRvs" style="text-align:center;margin-bottom:5px;">
                                 Featured Projects
                             </div>
                             <div id="featuredProjects"></div>
                         </div>
 
                         <!-- Recent -->
-                        <div style="float:left;">
-                            <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
+                        <div style="float:left;margin-left:4px;margin-top:5px;">
+                            <div class="banner bordered bannerRvs" style="text-align:center;margin-bottom:5px;">
                                 Recently Updated
                             </div>
                             <div id="recentProjects"></div>
@@ -139,7 +142,11 @@
             <!-- footer -->
             <div id="footer"></div>
 
-        </div>
+        </div> <!-- centering -->
+    </div> <!--margin-->
+
+    <!-- mobile Minimum Width -->
+    <div style="width:600px;visibility:hidden;">Mobile horizontal push out spacer</div>
 
 </body>
 </html>
