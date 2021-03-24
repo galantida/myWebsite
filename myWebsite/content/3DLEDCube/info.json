@@ -1,50 +1,146 @@
 ﻿{
   "title": "3D LED Cube",
-  "description": "3D LED Cube",
+  "description": "LED RGB Cube",
   "status": "complete",
-  "tags": [ "Electronics", "Arduino" ],
+  "tags": [ "Electronics", "Arduino", "C++" ],
   "entries": [
     {
-      "title": "Never",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "title": "Planning",
+      "text": "This 3D cube is a group of lights connected together to form not just the shell of a cube but the inside as well. The lights are connected in such a way that each one can be turned on and off independently of one another. This allows one to display three dimensional shapes, animations such as text banners and with a little imagination maybe even simple 3D games.",
       "image": "cubePic.jpg",
-      "thumbnail": null,
+      "name": "Final Cube",
       "link": null,
-      "name": "Side View",
-      "date": "1/14/19"
+      "date": "4/12/13"
     },
     {
       "title": null,
-      "text": "This is the first paragraph you would see in the blog write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-      "image": null,
-      "date": "1/14/19"
+      "text": "The cube you see here, I designed to be an 8x8x8 RGB LED Cube. This means its base is 8x8 lights and it is 8 lights high. The RGB part means that each light can be either Red Green or Blue and my mixing these colors I can have up to seven different colors. The LED part describes the types of lights I used which are called Light Emitting Diodes."
     },
     {
-      "title": "Sometimes",
-      "text": "This is the second paragraph in the block write up. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-      "image": null,
-      "date": null
+      "title": "The Basics",
+      "text": "Normal single color lights have two wires and  they will only light if current can freely flow in one side and out the other.  The key to the cube design is that all of  current in flow side of the lights on each layer are connected and all the lights in each column have their out flow side connected. This is hard to describe but have a look at the Cube Flow Diagram. Even though positive is flowing to the entire layer of lights only the one that also has its out flow connected will light.",
+      "image": "cubeCurrentFlow.jpg",
+      "name": "Basic Grid"
     },
     {
-      "title": null,
-      "thumbnail": "Color Bars.jpg",
-      "name": "Side View",
-      "text": null,
-      "date": null
+      "title": "Choosing an LED",
+      "text": "Common Anode or Commmon Cathode. This sounds fancy but it just describes which direction current flows through your LEDs. It doesn't matter which you choose, however the rest of your parts will have to support that current flow as well."
     },
     {
-      "title": "References and Credits",
-      "text": null,
-      "image": null,
-      "date": null
+      "title": "Choosing an LED",
+      "text": "Viewing Angle is important. You want to get the wides possible viewing angle so your cube will be visibly lite from the side.",
+      "image": "LED-Viewing-Angle-Diagram.jpg",
+      "name": "Viewing Angle"
+    },
+    {
+      "text": "Lesson Learned: I made the mistake of getting LEDs that were brightest only from the top. I didn't realize this until part way through the project. I did figure out a simple fix. I took some sand paper and roughed them up a bit to help disfuse their light. It helped but I was never really pleased with the results."
+    },
+    {
+      "file": "rgb led.pdf",
+      "name": "RGB LED Specifications",
+      "text": "Here is a link to the the specifications for the LEDs that I used."
+    },
+    {
+      "title": "Bending the LEDs",
+      "text": "Bending 512 RGB LEDs. Make sure to test each LED before you use them. When you buy in bulk you will have bad ones."
+    },
+    {
+      "thumbnail": "LED Final.jpg",
+      "name": "Final"
+    },
+    {
+      "thumbnail": "LED Step 5.jpg",
+      "name": "Step 5"
+    },
+    {
+      "thumbnail": "LED Step 4.jpg",
+      "name": "Step 4"
+    },
+    {
+      "thumbnail": "LED Step 3.jpg",
+      "name": "Step 3"
+    },
+    {
+      "thumbnail": "LED Step 2.jpg",
+      "name": "Step 2"
+    },
+    {
+      "thumbnail": "LED Step 1.jpg",
+      "name": "Step 1"
+    },
+    {
+      "title": "Soldering The Rows of each Layer",
+      "text": "2,048 Solder Connections. This is my life now. Make sure to thoroughly test each row. Not just by lighting each but also try to lift and separate each solder connection. Connection problems will be nearly impossible to find later."
+    },
+    {
+      "thumbnail": "SolderExample.jpg",
+      "name": "Final Row"
+    },
+    {
+      "thumbnail": "SolderStep5.jpg",
+      "name": "Step 5"
+    },
+    {
+      "thumbnail": "SolderStep4.jpg",
+      "name": "Step 4"
+    },
+    {
+      "thumbnail": "SolderStep3.jpg",
+      "name": "Step 3"
+    },
+    {
+      "thumbnail": "SolderStep2.jpg",
+      "name": "Step 2"
+    },
+    {
+      "thumbnail": "SolderStep1.jpg",
+      "name": "Step 1"
+    },
+    {
+      "title": "Soldering the Rows into Columns",
+      "text": "For lack of better terminology lets call this a 'stack' of eight columns and five layers. When it is complete it will be eight rows by eight columns."
+    },
+    {
+      "thumbnail": "LEDs.jpg",
+      "name": "A Stack"
+    },
+    {
+      "thumbnail": "ColumnAssembly.JPG",
+      "name": "Column Assembly"
+    },
+    {
+      "title": "Processor",
+      "text": "Rather then design an entire Cube control circuit I am using the Arduino Mega. This will let me run my cube via c++."
+    },
+    {
+      "title": "Lessons Learned",
+      "text": ""
+    },
+    {
+      "title": "",
+      "text": "Too much metal"
+    },
+    {
+      "title": "",
+      "text": "Small Viewing Angle"
+    },
+    {
+      "title": "",
+      "text": "Processor and LED Speeds"
+    },
+    {
+      "title": "",
+      "text": "Pull Down Resistors"
+    },
+    {
+      "title": "References and Credits"
     },
     {
       "title": null,
       "text": "I use it to find everything",
       "image": null,
       "link": "https://google.com",
-      "name": "Thingiverse",
-      "date": "2/14/19"
+      "name": "Thingiverse"
     }
   ]
 }

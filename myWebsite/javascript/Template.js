@@ -4,15 +4,13 @@
     this.url = url;
     this.template = template;
 
+    // the default function used to populate a tempalte with content
     Template.prototype.populated = function (content) {
         return this.replaceWithObject(null, content, this.template);
+        // this probably could be replace with unknown
     }
 
-    Template.prototype.appendTag = function (tagName, appendage) {
-        if (tagName == null) return appendage;
-        else return tagName + "." + appendage;
-    }
-
+    // used to determine the replace type and execute it
     Template.prototype.replaceWithUnknown = function (tagName, unknown, template) {
 
         if (unknown == null) unknown = "";
@@ -42,6 +40,7 @@
         }
     }
 
+    // walk the content array and execute a replace on each object
     Template.prototype.replaceWithArray = function (tagName, array, template) {
         var populatedTemplate = template;
 
@@ -52,6 +51,7 @@
         return populatedTemplate;
     }
 
+    // walk the content object and execute a replace each property you find
     Template.prototype.replaceWithObject = function (tagName, object, template) {
         var populatedTemplate = template;
         var keys = Object.keys(object);
@@ -62,9 +62,16 @@
         return populatedTemplate;
     }
 
+    // replace the name with the value. Only Real replace.
     Template.prototype.replaceWithValue = function (tagName, value, template) {
         //console.log("replacing '[" + tagName + "]' with '" + value + "'.");
         return template.replaceAll("[" + tagName + "]", value);
+    }
+
+    // this is used to build the subtag names (e.g. "[content.entry.1]")
+    Template.prototype.appendTag = function (tagName, appendage) {
+        if (tagName == null) return appendage;
+        else return tagName + "." + appendage;
     }
     
 

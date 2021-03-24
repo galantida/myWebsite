@@ -24,7 +24,7 @@
         }
 
         function loadTemplates() {
-            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectThumb.html"];
+            var templateList = ["templates/header.html", "templates/footer.html", "templates/projectBanner.html"];
             templates.loadTemplates(templateList, loadContent);
         }
 
@@ -41,7 +41,7 @@
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
             // content section
-            var template = templates.getTemplate("projectThumb");
+            var template = templates.getTemplate("projectBanner");
 
             // get content
             var searchString = params.get("searchString");

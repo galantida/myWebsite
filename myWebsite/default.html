@@ -38,10 +38,10 @@
             var programming = { "firstName": "Programming", "secondName": "", "searchString": "Programming", "backgroundImageURL": "media/programmingd.jpg", "description": "Programming experiments in graphics and robotics." };
             document.getElementById("category1").innerHTML = templates.getTemplate("category").populated(programming);
 
-            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronicsd.jpg", "description": "Electronic circuit design and prototypings experiments." };
+            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronics2d.jpg", "description": "Electronic circuits, design and build experiments." };
             document.getElementById("category2").innerHTML = templates.getTemplate("category").populated(electronics);
 
-            var fred = { "firstName": "3D", "secondName": "Modeling", "searchString": "3D Print", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "3D Modeling, Graphic Design and Printing." };
+            var fred = { "firstName": "3D", "secondName": "Modeling", "searchString": "3D Print", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Graphics, Modeling, prototyping and and 3D Printing." };
             document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
 
             // display content
@@ -58,6 +58,7 @@
             var featured = [];
             featured[0] = projects.getProject("moonStand");
             featured[1] = projects.getProject("reindeer");
+            featured[2] = projects.getProject("3DLEDCube");
             for (var t = 0; t < featured.length; t++) {
                 document.getElementById("featuredProjects").innerHTML += projectThumbTemplate.populated(featured[t].content);
             }
@@ -82,9 +83,7 @@
             <!-- page top -->
             <div class="padded" style="margin-top:5%;">
                 <div style="float:right;">
-                    <video height="200px;" controls autoplay class="imageFrame">
-                        <source src="media/cubeTest.mov" type="video/mp4">
-                    </video>
+                    <img src="content/3DLEDCube/Dream Board.jpg" style="height:200px;" class="imageFrame">
                 </div>
                 <div style="overflow:hidden;height:175px;">
                     <font class="heading3">Company Tag Line</font><br />
@@ -115,20 +114,20 @@
                     <!-- project listing -->
                     <div style="width:600px;margin:auto;margin-top:1%;padding:5px;" class="floatOnSize">
 
-                        <!-- Recent -->
-                        <div style="float:left;">
-                            <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
-                                Recently Updated
-                            </div>
-                            <div id="recentProjects"></div>
-                        </div>
-
                         <!-- Featured -->
                         <div style="float:left;">
                             <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
                                 Featured Projects
                             </div>
                             <div id="featuredProjects"></div>
+                        </div>
+
+                        <!-- Recent -->
+                        <div style="float:left;">
+                            <div class="banner bordered bannerRvs" style="text-align:center;margin:10px;">
+                                Recently Updated
+                            </div>
+                            <div id="recentProjects"></div>
                         </div>
 
                     </div>
