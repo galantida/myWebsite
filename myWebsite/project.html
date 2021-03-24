@@ -20,6 +20,7 @@
         var project = new Project();
 
         function loadPage() {
+            initImagePresenter();
             loadTemplates();
         }
 
@@ -102,15 +103,6 @@
 
             <!-- footer -->
             <div id="footer"></div>
-
-
-            <!-- Image Presenter Code (used to display image overlay) -->
-            <div id="divImagePresenterDisplay" class="divImagePresenterDisplay" onclick="HideImagePresenter();">
-                <div class="divExpandedImage">
-                    <img id="ImagePresenterImage" alt="Expanded" src="" style="border:6px solid white;" />
-
-                </div>
-            </div>
 
         </div> <!-- centering -->
     </div> <!--margin-->
