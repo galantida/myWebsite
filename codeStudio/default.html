@@ -45,10 +45,11 @@
             document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
 
             // display content
+            projects.sortByUpdated(); // sort projects by date
 
             // display highlighted project
             var template = templates.getTemplate("projectHighlight");
-            var mostRecentProject = projects.getMostRecentProject();
+            var mostRecentProject = projects.projects[0];
             document.getElementById("projectBanner0").innerHTML = template.populated(mostRecentProject.content);
 
             // get thumb template
@@ -64,8 +65,8 @@
             }
 
             // display recent projects
-            projects.sortByUpdated();
-            for (var t = 0; t < 3; t++) {
+            
+            for (var t = 1; t < 4; t++) {
                 document.getElementById("recentProjects").innerHTML += projectThumbTemplate.populated(projects.projects[t].content);
             }
 
@@ -88,9 +89,11 @@
                 <div style="float:right;">
                     <img src="content/3DLEDCube/Dream Board.jpg" style="height:200px;" class="imageFrame">
                 </div>
-                <div style="overflow:hidden;height:175px;">
-                    <font class="heading3">Company Tag Line</font><br />
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br />
+                <div style="overflow:hidden;height:200px;">
+                    <font class="heading3">
+                        Why Do Projects?
+                    </font><br />
+                    Knowing that something works is not enough for me. I need to know how. I live my life seeking out "ah-ha" moments that make me feel like a kid again. If I am lucky, I can discover an entirely new perspective of something I already knew.<br />
                 </div>
             </div>
 

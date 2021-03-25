@@ -32,8 +32,10 @@
       "thumbnail": "image5.jpeg"
     },
     {
-      "title": null,
-      "text": "I have included my original model file as well as the Arduino source code in case you want to make changes. I have also included a schematic of the electronics. If you come up with a cool coding Idea please share it so I can include it in the original GitHub repository. This is my first post so let me know if I forgot anything.",
+      "title": "How I Designed This",
+      "text": "This was my first time using \"Fusion 360\" as well as creating a 3D model for printing. I didn't realize how much there was to consider for a printed model. Some of my earlier designs were just not printable. Even in this design I had to curve some of the over hangs to support the print as it worked its way up. Now you should be able to print this without support structures turned on. It is a bit hard to get off the print bed though. I slid a metal poke through the power wire hole to pry it up without breaking it. Just make sure to put something under the other end so you don't scratch your bed.",
+      "name": "3D Model",
+      "image": "model.png",
       "date": "8/13/20"
     },
     {
@@ -54,17 +56,13 @@
       "date": "8/13/20"
     },
     {
-      "title": "parts List",
-      "text": "<ul><li>Breadboard buttons - https://www.google.com/search?q=breadboard+buttons</li><li>RGB LEDS (common anode) - https://www.google.com/search?q=RGB+LEDS</li><li>ARDUINO NANO - https://www.google.com/search?q=Arduino+Nnano</li><li>2 Resistors 4.7K (Pull Down Resistors for buttons)</li><li>6 Resistors Sized for your LEDs ((2)Red 150 Ohm, (4)Blue and Green 68 Ohm)</li></ul>",
+      "title": "What is Available",
+      "text": "I have included my original model file as well as the Arduino source code in case you want to make changes. I have also included a schematic of the electronics. If you come up with a cool coding Idea please share it so I can include it in the original GitHub repository. This is my first post so let me know if I forgot anything.",
       "date": "8/13/20"
     },
     {
-      "name": "3D Model",
-      "thumbnail": "model.png"
-    },
-    {
-      "title": "How I Designed This",
-      "text": "This was my first time using \"Fusion 360\" as well as creating a 3D model for printing. I didn't realize how much there was to consider for a printed model. Some of my earlier designs were just not printable. Even in this design I had to curve some of the over hangs to support the print as it worked its way up. Now you should be able to print this without support structures turned on. It is a bit hard to get off the print bed though. I slid a metal poke through the power wire hole to pry it up without breaking it. Just make sure to put something under the other end so you don't scratch your bed.",
+      "title": "parts List",
+      "text": "<ul><li>Breadboard buttons - https://www.google.com/search?q=breadboard+buttons</li><li>RGB LEDS (common anode) - https://www.google.com/search?q=RGB+LEDS</li><li>ARDUINO NANO - https://www.google.com/search?q=Arduino+Nnano</li><li>2 Resistors 4.7K (Pull Down Resistors for buttons)</li><li>6 Resistors Sized for your LEDs ((2)Red 150 Ohm, (4)Blue and Green 68 Ohm)</li></ul>",
       "date": "8/13/20"
     },
     {
