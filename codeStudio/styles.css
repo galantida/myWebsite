@@ -90,17 +90,9 @@ a:active {
 
 /* Standard Image Styles
 ----------------------------------------------------------*/
-.divImagePresenterDisplay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    visibility: hidden;
-    text-align: center;
-}
-
 .imageFrame {
     padding: 1px;
-    border: 1px solid #1C559A; /* text on font color background */
+    border: 1px solid #CCCCFF; /* text on font color background */
     background-color: #CCCCFF;
 }
 

@@ -17,3 +17,14 @@ function search(searchTerms, searchContent) {
 
     return count;
 }
+
+function getScaledSize(actualWidth, actualHeight, desiredWidth, desiredHeight) {
+    if (desiredWidth != null) {
+        // scaled height on a fixed width
+        return (desiredWidth / actualWidth) * actualHeight;
+    }
+    else {
+        // scaled width based on a fixed height
+        return (desiredHeight / actualHeight) * actualWidth;
+    }
+}
