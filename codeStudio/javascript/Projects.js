@@ -86,14 +86,11 @@
 
             // get most recent project index
             var index = this.getMostRecentProjectIndex();
-            console.log("mostRecentProjectIndex" + index);
 
             // add project to sorted list
             sortedProjects[sortedProjects.length] = this.projects[index];
-            console.log("sortedLength" + sortedProjects.length);
 
             // remove project from projects
-            console.log("index" + index);
             if (index > -1) this.projects.splice(index, 1);
 
             emg++;
@@ -114,8 +111,9 @@
         var filteredProjects = [];
         for (var p = 0; p < this.projects.length; p++) {
 
-            // if there are no filters or the project matches the filters.
-            if (this.projects[p].search(searchString) > 0) {
+            // if the project matches the filters.
+            var searchResults = this.projects[p].search(searchString);
+            if (searchResults > 0) {
                 filteredProjects[filteredProjects.length] = this.projects[p]
             }
         }

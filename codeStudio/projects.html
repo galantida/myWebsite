@@ -32,6 +32,7 @@
 
             // download content
             projects.loadProjectsByIndexFile("content/index.json", displayPage);
+            projects.sortByUpdated();
         }
 
         function displayPage() {
@@ -46,13 +47,14 @@
             // get content
             var searchString = params.get("searchString");
             var filteredProjects = projects.search(searchString);
+            console.log(filteredProjects);
 
             if (searchString) document.getElementById("searchString").innerHTML = searchString;
 
             // display content
             var html = "";
             for (var t = 0; t < filteredProjects.length; t++) {
-                var content = projects.projects[t].content;
+                var content = filteredProjects[t].content;
                 html += template.populated(content);
             }
             document.getElementById("content").innerHTML = html;

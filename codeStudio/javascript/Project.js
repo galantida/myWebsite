@@ -75,8 +75,11 @@
 
         searchString = searchString.toLowerCase();
 
-        // this could be more interesting
+        // this could be more interesting. (- and or etc...)
         var searchTerms = searchString.split(',');
+        for (var s = 0; s < searchTerms.length; s++) {
+            searchTerms[s] = searchTerms[s].trim();
+        }
 
         // search content
         var count = 0;

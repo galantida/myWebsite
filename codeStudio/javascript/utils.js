@@ -7,8 +7,10 @@
 function search(searchTerms, searchContent) {
     var count = 0;
     if (searchContent != null) {
+        // no case sensitive search
         searchContent = searchContent.toLowerCase();
 
+        // count the number of search hits
         for (var t = 0; t < searchTerms.length; t++) {
             var searchTerm = searchTerms[t].toLowerCase();
             if (searchContent.includes(searchTerm)) count++;

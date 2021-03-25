@@ -35,13 +35,13 @@
             document.getElementById("footer").innerHTML = templates.getTemplate("footer").template;
 
             // display categories
-            var programming = { "firstName": "Programming", "secondName": "", "searchString": "Programming", "backgroundImageURL": "media/programmingd.jpg", "description": "Programming experiments in graphics and robotics." };
+            var programming = { "firstName": "Programming", "secondName": "", "searchString": "Program, Arduino", "backgroundImageURL": "media/programmingd.jpg", "description": "Programming experiments in graphics and robotics." };
             document.getElementById("category1").innerHTML = templates.getTemplate("category").populated(programming);
 
-            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronics", "backgroundImageURL": "media/electronics2d.jpg", "description": "Electronic circuits, design and build experiments." };
+            var electronics = { "firstName": "Electronics", "secondName": "", "searchString": "Electronic, Electrical, Robot, Arduino", "backgroundImageURL": "media/electronics2d.jpg", "description": "Electronic circuits, design and build experiments." };
             document.getElementById("category2").innerHTML = templates.getTemplate("category").populated(electronics);
 
-            var fred = { "firstName": "3D", "secondName": "Modeling", "searchString": "3D Modeling", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Graphics, Modeling, prototyping and and 3D Printing." };
+            var fred = { "firstName": "3D", "secondName": "Modeling", "searchString": "3D Model, 3D Print", "backgroundImageURL": "media/3DPrintingd.jpg", "description": "Graphics, Modeling, prototyping and and 3D Printing." };
             document.getElementById("category3").innerHTML = templates.getTemplate("category").populated(fred);
 
             // display content
@@ -85,9 +85,9 @@
             <div id="header"></div>
 
             <!-- page top -->
-            <div class="padded" style="margin-top:5%;">
+            <div style="width:95%;margin:auto;margin-top:5%;">
                 <div style="float:right;">
-                    <img src="content/3DLEDCube/Dream Board.jpg" style="height:200px;" class="imageFrame">
+                    <img src="content/3DLEDCube/Dream Board.jpg" style="height:200px;margin-left:7px;" class="imageFrame">
                 </div>
                 <div style="overflow:hidden;height:200px;">
                     <font class="heading3">
@@ -98,7 +98,7 @@
             </div>
 
             <!-- page content -->
-            <div style="margin-top:5px;width:100%;">
+            <div style="margin-top:5%;width:100%;">
 
                 <!-- categories-->
                 <div style="clear:both;"></div>
@@ -108,7 +108,7 @@
 
                 <!-- projects -->
                 <div style="clear:both;"></div>
-                <div class="banner bordered" style="padding:10px;margin-top:5px;"><a href="projects.html" style="text-decoration:none;">Projects</a></div>
+                <div class="banner bordered" style="padding:10px;margin-top:5%;"><a href="projects.html" style="text-decoration:none;">Projects</a></div>
 
                 <div style="width:100%;position:relative;">
 
