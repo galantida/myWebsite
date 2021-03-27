@@ -1,0 +1,127 @@
+﻿{
+  "title": "Smart Shed",
+  "description": "Solar power for my shed.",
+  "status": "complete",
+  "tags": [ "Electrical" ],
+  "entries": [
+    {
+      "title": "Why Solar?",
+      "text": "I really just wanted to learn more about solar power. I didn't actually need power in my shed but some lights and free power to charge my garden tools was a bonus. I also liked the idea of having a backup power plan in the event we loose power for an extended amount of time.I mentioned this project to my dad and he actualy had some recycled panels, charge controlers and gel batteries from a pervious job.",
+      "image": "IMG_0813.jpg",
+      "name": "Smart Shed",
+      "date": "6/6/20"
+    },
+    {
+      "title": "Original Equipment",
+      "text": "The label said they were already 17.8 volt solar panels which would be more than enough to charge 12 volt batteries. The label also says that new they put out 53 watts each at peak performance, which isn't too bad. They are about 20 years old but on a sunny day I can expect to get maybe 225-250 watts from my five panels. You may have also noticed on the label a Voc of 22 Volts. I found this is the voltage you can expect when there is nothing connected to the panels. He also had a few charge controlers which is basically a battery charger you can use with solar panels. It makes sure the panels don't send too much energy to the battery all at once. It also disconnects the battery once it is fully charged.",
+      "image": "SolarPanelSystem.jpg",
+      "name": "Solar Panel System"
+    },
+    {
+      "thumbnail": "img_0953.jpg",
+      "name": "Batteries"
+    },
+    {
+      "thumbnail": "img_0682.jpg",
+      "name": "Ctrl Label"
+    },
+    {
+      "thumbnail": "img_0681.jpg",
+      "name": "Controler"
+    },
+    {
+      "thumbnail": "img_0816.jpg",
+      "name": "Diodes"
+    },
+    {
+      "thumbnail": "img_0680.jpg",
+      "name": "Panel Label"
+    },
+    {
+      "thumbnail": "img_0792.jpg",
+      "name": "Solar Panel"
+    },
+    {
+      "title": "Panel Wiring",
+      "text": "I researched the different ways of wiring solar panels. Series to pump up the voltage or parallel. During my research I found that higher voltage DC systems increase the projects complexity and cost so I went with parallel. The label said they were already 17.8 volt solar panels which would be more than enough to charge 12 volt batteries. I also found I could ignore the diodes on the panel since they only come into play when you are wiring in series.",
+      "image": "img_0684.jpg",
+      "name": "Connected Panels"
+    },
+    {
+      "title": "Panel Mounting",
+      "text": "I looked online for solar panel mounting hardware and it was ridiculously expensive. I decided to come up with my own more afordable solution. I need something that would be strong enough to no blow off and also hold the weight of a sticky snowfall.I decided on using aluminum angle and all thread rod. I ran the angle along the top and bottom of the solar panels. I also cut some smaller pieces that I could use as mounting brackets to slide under the shingles."
+    },
+    {
+      "thumbnail": "img_0809.jpg",
+      "name": "Mounts"
+    },
+    {
+      "thumbnail": "img_0957.jpg",
+      "name": "Top Mount"
+    },
+    {
+      "thumbnail": "img_0944.jpg",
+      "name": "Top Rail"
+    },
+    {
+      "thumbnail": "img_0811.jpg",
+      "name": "Bottom Rail"
+    },
+    {
+      "title": "Bluetooth Charge Controler",
+      "text": "Since they are not that expensive I decide to buy a modern charge controler. Today you can get more modern features like bluetooth and some charts of your solar generation and battery life over time. I went with the Wanderer Li 30A 12V PWM. It needs at least 12 volt to function but can handle my 18 volt solar panels. It also supports the GEL batteries I got from my Dad. My panels put out 250 watts which works out to be about 20 Amps at 12 volts.",
+      "image": "img_0951.jpg",
+      "name": "Wanderer Bluetooth"
+    },
+    {
+      "title": "Inverter",
+      "text": "An intverter is used to convert electricty from 12 volt DC to you house current of 120 volts AC. The original equipment came from a 12 volt system that had no need to convert to AC. I decided to buy the Kinverch 2000 Watt Inverter. It too has bluetooth although it never seems to work.",
+      "image": "img_0952.jpg",
+      "name": "Kinverch 2000 Watt"
+    },
+    {
+      "title": "Inverter On The Cheap",
+      "text": "Once thing I noticed about most small afordable inverters is they seem designed for limited time use, like when camping. Only the much more expensive higher wattage ones are designed to run all the time. I generally keep the inverter off until I need to power some yard equipment. One of the requirements for this project was that I could charge my power tool batteries all the time. Coincidentally around this time the battery backup for my network server was failing. I knew this had a battery that charged when there was power and was able to convert battery power to 120 volts AC when the power failed. It was also designed to run all the time with only ambient cooling. I decided to crack it open and was lucky to find a 12 volt circuit. I removed the dead battery and wired it to my solar batteries. I also had to remove the power failure alarm or else it would continously beep. Now I have continous 120 volts AC. I could probably run it up to 500 watts which is penty to charge my power tool batteries. I am also using the extra power to run my rock tumbler.",
+      "image": "img_0746.jpg",
+      "name": "Running on Battery Backup"
+    },
+    {
+      "title": "Closing",
+      "text": "Researching and installing the solar system was a fun project. In the end I also like that I am using just a little less energy. I also like the piece of mind that I can produce my own energy in the event of an emergency."
+    },
+    {
+      "thumbnail": "IMG_0956.jpg",
+      "name": "Inside"
+    },
+    {
+      "thumbnail": "IMG_0813.jpg",
+      "name": "Exterior"
+    },
+    {
+      "thumbnail": "IMG_0840.png",
+      "name": "Output"
+    },
+    {
+      "title": "Lessons Learned",
+      "text": "<ul>"
+    },
+    {
+      "text": "<li>It is important to set your panels to the optimum angle for your longitude. I had originally mounted them flat on the thirty degree roof and they only produced about helf. I found a website that tells you the optimal angle to mount your solar panels based on your longitude.</li>"
+    },
+    {
+      "text": "<li>Amperage is tighly coupled with voltage. If your panels can produce 250 watts at 12 volts that is 20 amps. That same 250 watts at 120 volts is only about 2 amps.</li>"
+    },
+    {
+      "text": "<li>My twenty year old GEl batteries barely hold any energy. One night of running a rock tumbler drains all four batteries just below the reccomended voltage specification. If I were to get a cloudy week I would run the risk of over discarging my batteries and shortening their lifespan. I am going to need to find a solution to limit over discharging.</li>"
+    },
+    {
+      "text": "<li>The included 'Typical PV System' assumes you are installing a portable system like on an RV. When installing a permanent system like a shed you should install a grounding rod. This is simply a long rod you hammer in to the ground. You then connect a wire from the rod to your AC Inverter.</li>"
+    },
+    {
+      "text": "<li>You might have noticed on the solar panel label a Voc of 22 Volts.  I found this is the voltage you can expect when there is no current flowing. Your equipment has to be able to handle that voltage but the solar system circuit will never actualy output any current at that level.</li>"
+    },
+    {
+      "text": "</ul>"
+    }
+  ]
+}

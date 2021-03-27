@@ -12,20 +12,23 @@
       "name": "Painted Ears",
       "date": "12/15/20"
     },
-	{
+    {
       "thumbnail": "catEars2.jpg",
-	  "name" : "Cat Ears 2",
+      "name": "Cat Ears 2",
       "date": "12/15/20"
     },
-	{
-	  "thumbnail": "Scott.jpg",
-	  "name" : "Scott",
+    {
+      "thumbnail": "Scott.jpg",
+      "name": "Scott",
       "date": "12/15/20"
     },
-	{
+    {
       "thumbnail": "Alyx.jpg",
-	  "name" : "Alyx",
+      "name": "Alyx",
       "date": "12/15/20"
+    },
+    {
+      "title": "References and Credits"
     },
     {
       "title": null,

@@ -1,0 +1,38 @@
+﻿{
+  "title": "Video Puzzles",
+  "description": "First Unity Game",
+  "status": "Inprogress",
+  "tags": [ "Program" ],
+  "entries": [
+    {
+      "title": "About the Game",
+      "text": "The idea behind the game is that you have the scrambled pieces of a video and you try to descramble it. The game should have a lot of feed back, similar to Bejewled, to make doing puzzles more exciting. I was looking for simple 3D game idea that would allow me to explore the Unity game engine. Something a one person development team could take all the way through, modeling, sounds, scoring and eventually release on Steam.",
+      "date": "11/4/20"
+    },
+	{
+      "title": "January 2021 Update",
+      "text": "I am really enjoying Unity. I had tried it before but found it to be more of a limited game engine that a development platform for programmers. Now thay have removed all the old scripting and allow real C# coding. I have resize based on the video size. You can also drag and drop pieces. Translating the mouse into 3D space was a bit of a challenge but I have drag and drop working pretty well now. I have even improved on it by connecting pieces together that should go together. This allows the user to drag the group of connected pieces with a single click and drag.",
+      "date": "1/4/21",
+	  "image":"videopuzzles1.png",
+	  "name":"First Look"
+    },
+	{
+      "title": "February 2021 Update",
+      "text": "I have learned how to do sounds in Unity and wrote a sound system. I added some sounds and particle effects when you move pieces and successfully place them.",
+      "date": "2/4/21"
+    },
+	{
+      "title": "March 2021 Update",
+      "text": "I have decided to move to the scenery behind the puzzle. I am thinking some grass blowing in the wind. Maybe the occasional bee or butterfly will pass by or land while you do your puzzle. This will require me to learn some 3D modeling and animation which originally was the entire point of this project.",
+      "date": "3/4/21"
+    },
+	{
+	"title":"References and Credits"
+	},
+    {
+      "link": "https://unity.com/",
+      "name": "Unity",
+	  "text": "Unity Game Engine"
+    }
+  ]
+}

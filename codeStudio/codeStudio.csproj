@@ -70,6 +70,8 @@
     <Content Include="content\2020Ornament\image3.jpeg" />
     <Content Include="content\ArtilleryX1FrameCap\image0.jpg" />
     <Content Include="content\ArtilleryX1FrameCap\image1.jpg" />
+    <Content Include="content\BlenderStudy\blenderHandRigging.png" />
+    <Content Include="content\BlenderStudy\blenderHandRigging2.png" />
     <Content Include="content\CatEars\alyx.jpg" />
     <Content Include="content\CatEars\catEars2.jpg" />
     <Content Include="content\CatEars\image7.jpg" />
@@ -100,7 +102,26 @@
     <Content Include="content\moonStand\MoonStandSchematic.png" />
     <Content Include="content\reindeer\image4.jpg" />
     <Content Include="content\ropePullHandle\image12_2.jpg" />
+    <Content Include="content\solarPanels\IMG_0680.jpg" />
+    <Content Include="content\solarPanels\IMG_0681.jpg" />
+    <Content Include="content\solarPanels\IMG_0682.jpg" />
+    <Content Include="content\solarPanels\IMG_0684.jpg" />
+    <Content Include="content\solarPanels\IMG_0746.jpg" />
+    <Content Include="content\solarPanels\IMG_0792.jpg" />
+    <Content Include="content\solarPanels\IMG_0809.jpg" />
+    <Content Include="content\solarPanels\IMG_0811.jpg" />
+    <Content Include="content\solarPanels\IMG_0813.jpg" />
+    <Content Include="content\solarPanels\IMG_0816.jpg" />
+    <Content Include="content\solarPanels\IMG_0840.PNG" />
+    <Content Include="content\solarPanels\IMG_0944.jpg" />
+    <Content Include="content\solarPanels\IMG_0951.jpg" />
+    <Content Include="content\solarPanels\IMG_0952.jpg" />
+    <Content Include="content\solarPanels\IMG_0953.jpg" />
+    <Content Include="content\solarPanels\IMG_0956.jpg" />
+    <Content Include="content\solarPanels\IMG_0957.jpg" />
+    <Content Include="content\solarPanels\SolarPanelSystem.jpg" />
     <Content Include="content\StarWarsLogo\IMG_0626.jpg" />
+    <Content Include="content\videoPuzzles\videoPuzzles1.png" />
     <Content Include="default.html" />
     <Content Include="javascript\ImagePresenter.js" />
     <Content Include="javascript\Project.js" />
@@ -146,6 +167,9 @@
     <Content Include="content\reindeer\info.json" />
     <Content Include="content\ropePullHandle\info.json" />
     <Content Include="content\StarWarsLogo\info.json" />
+    <Content Include="content\BlenderStudy\info.json" />
+    <Content Include="content\solarPanels\info.json" />
+    <Content Include="content\videoPuzzles\info.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

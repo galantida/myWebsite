@@ -22,11 +22,11 @@
             // build url list
             projectsArray[t] = projectsFileURL + "/" + projectsArray[t] + "/info.json"; 
         }
-        this.loadProjectsByArray(projectsArray, this.callbackFunction);
+        this.loadProjectsFromProjectNames(projectsArray, this.callbackFunction);
     }
 
     // load a list fo projects from info.json
-    Projects.prototype.loadProjectsByArray = function (projectsArray, callbackFunction) {
+    Projects.prototype.loadProjectsFromProjectNames = function (projectsArray, callbackFunction) {
         console.log("Projects: Requesting project batch.");
         console.log(projectsArray);
         this.callbackFunction = callbackFunction; // set callers batch callback
@@ -37,6 +37,11 @@
             this.projects[this.projects.length - 1].load(projectsArray[t], this.internalCallback.bind(this)); // load info file for each content folder on list
         }
         console.log(this.projects);
+    }
+
+    // load a list fo projects from info.json
+    Projects.prototype.loadProjectsFromProjectArray = function (projectsArray) {
+        this.projects = projectsArray;
     }
 
     Projects.prototype.internalCallback = function (responseText) {
@@ -104,7 +109,7 @@
 
         // return all when no search is specified
         if (searchString == null) {
-            return this.projects;
+            return this;
         }
 
         // loop thorugh each project and execute search
@@ -117,6 +122,9 @@
                 filteredProjects[filteredProjects.length] = this.projects[p]
             }
         }
-        return filteredProjects;
+
+        var filteredProjectsObj = new Projects();
+        filteredProjectsObj.loadProjectsFromProjectArray(filteredProjects);
+        return filteredProjectsObj;
     }
 }

@@ -1,0 +1,63 @@
+﻿{
+  "title": "Blender Study",
+  "description": "Learning 3D Modeling with Blender",
+  "status": "Inprogress",
+  "tags": [ "3D Modeling" ],
+  "entries": [
+    {
+      "title": "Week One",
+      "text": "When I started 3D printing in 2020 I decided it would be helpful to also learn a 3D modeling program. This would allow me to modify models that I had downloaded but also create some of my own.",
+      "date": "2/4/21"
+    },
+    {
+	 "title": "Background",
+      "text": "Way back in the early nineties I was trying to get any job that would allow me to use a computer. This was a time when Computer Aided Design was all the rage. The market was full of older architects and engineers that had been working with T-squares and triangles but wanted or needed their work translated to a digital format. I took a six month course that involved 3 months of mechanical drawing and 3 months of Computer Aided Design on AutoDesk AutoCAD 10.",
+      "date": "2/4/21"
+    },
+    {
+		"title": "Fusion 360",
+      "text": "Given my background with AutoDesk I decided to hitch my wagon to their current product Fusion 360. They offered a fully functional free product perfect for someone like me that will probably do only about one model a year. Wow how things had changed. Previously in AutoCAD 3D drawing had involved creating shapes, connecting and modifying them permanently. Now in Fusion 360 you are building a script of shapes, connections and modifications. You can roll back time and change how to you did things to the model timeline then roll back forward and see how they impact the finished product. Very cool! I spent about 3 months learning this program and the new style. I used Fusion to create the Moon Stand project in my projects section. I was only a bit uncomfortable with their application architecture. The product was essentially an online program with a local install. You must logon to use it and you must use their online cloud solution and cannot load or save local files.",
+      "date": "2/4/21"
+    },
+	{
+      "text": "By the end of 2020 I felt I could say \"I am again a 3D modeler\" and \"My tool of choice was Fusion 360\". It was around this same time AutoDesk decided to go to a monthly pay model. They would limit some of the things you could do in their free model as well as the type of file exports that were permitted. I didn't even know what some of the things they were limiting were but I worried as I learned more I would find I needed them.  I had invested a lot of time and trust in this company and the change in business model made me nervous about investing more.",
+      "date": "2/4/21"
+    },
+	{
+		"title":"Blender"
+	},
+	{
+	  "image": "blenderHandRigging.png",
+	  "name" : "Posed Hand"
+    },
+	{
+	  "image": "blenderHandRigging2.png",
+	  "name" : "Rigged Hand"
+    },
+	{
+		"text": "Now, introducing Blender. When originally I reviewed all the different 3D modeling options available my objective was to find a good low cost mechanical drawing program. I needed to create 3D prints that supported my electronics projects. Bender looked wonderful but it seemed more of a sculpting program.",
+      "date": "2/4/21"
+    },
+	{
+      "text": "Well this week I decided to start playing with Bender. More specifically, using bones to modify existing models. The image above is a hand model I downloaded. I added the bones following a tutorial by \"Chipper Videos\". Once the model is properly rigged you can easily reposition the rigging to deform the model. If you don't like the way it moves you can even paint weights to change how the skin of the model reacts to the movement of each aperture.",
+      "date": "2/4/21"
+    },
+	{
+      "text": "I have now imported a few different models and rigged them. I have even tried my hand at animation. It looks like smooth fluid animation is going to be my next challenge.",
+      "date": "2/4/21"
+    },
+	{
+	"title":"References and Credits"
+	},
+    {
+      "link": "https://free3d.com/3d-model/rigged-hands-28855.html",
+      "name": "Hand Model",
+	  "text": "From Free3D.com"
+    },
+	{
+	"link":"https://www.youtube.com/watch?v=ZmiZ6VkSJBE",
+	"name":"Blender 2.80 Tutorial: How To Add Bones To An Object",
+	"text": "by Chipper Videos"
+	}
+  ]
+}

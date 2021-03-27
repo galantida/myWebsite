@@ -4,11 +4,14 @@
   "status": "complete",
   "tags": [ "3D Print" ],
   "entries": [
-	{
+    {
       "title": "About the Print",
       "text": "My previous mower pull start fell through the loop that was holding it and got chopped by the mower. Twice!!! I could have chosen one that was more ergonomic but I wanted something big and beefy enough that it wouldn't happen again. This one fit the bill. You can see from the pic it is not going anywhere.",
-	  "image":"image12_2.jpg",
+      "image": "image12_2.jpg",
       "date": "8/14/20"
+    },
+    {
+      "title": "References and Credits"
     },
     {
       "text": "By henryarnold on Thingiverse",
