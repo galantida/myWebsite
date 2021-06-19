@@ -64,8 +64,7 @@
                 document.getElementById("featuredProjects").innerHTML += projectThumbTemplate.populated(featured[t].content);
             }
 
-            // display recent projects
-            
+            // display recent projects (skips first one)
             for (var t = 1; t < 4; t++) {
                 document.getElementById("recentProjects").innerHTML += projectThumbTemplate.populated(projects.projects[t].content);
             }

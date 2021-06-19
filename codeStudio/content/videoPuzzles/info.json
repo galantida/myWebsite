@@ -1,12 +1,13 @@
 ﻿{
   "title": "Video Puzzles",
-  "description": "First Unity Game",
+  "description": "1st Unity Game",
   "status": "Inprogress",
   "tags": [ "Program" ],
   "entries": [
     {
       "title": "About the Game",
       "text": "The idea behind the game is that you have the scrambled pieces of a video and you try to descramble it. The game should have a lot of feed back, similar to Bejewled, to make doing puzzles more exciting. I was looking for simple 3D game idea that would allow me to explore the Unity game engine. Something a one person development team could take all the way through, modeling, sounds, scoring and eventually release on Steam.",
+	  "image": "puzzle.png",
       "date": "11/4/20"
     },
 	{
@@ -25,6 +26,20 @@
       "title": "March 2021 Update",
       "text": "I have decided to move to the scenery behind the puzzle. I am thinking some grass blowing in the wind. Maybe the occasional bee or butterfly will pass by or land while you do your puzzle. This will require me to learn some 3D modeling and animation which originally was the entire point of this project.",
       "date": "3/4/21"
+    },
+	{
+      "title": "April 2021 Update",
+      "text": "I made some progress in the puzzle game. I put a nice frame around the puzzle. In the image you also can see a gold border around pieces that are properly placed. A silver boarder around pieces that are connected but not yet placed in the right square. The coolest part is you can add to the pieces bordered in silver as well as move them around as a group. This allows you to connect pieces you know go together before knowing where they go.\n\nI did have a nice grass background, but I had to remove it. I have found that there are two competing methodologies for rendering in Unity. One is the High-Definition Render Pipeline (HDRP) and the other is the Unity Render Pipeline (URP). HDRP looks beautiful, I had a beautiful sky and some very realistic grass waving in the wind. The downside was nothing else seems to work. I had trouble with all of Unity’s other widgets for terrain, tress etc… I also read that HDRP is too demanding for mobile devices. I wanted simple so I had to remove HDRP and switch back to URP.",
+	  "image": "puzzle.png",
+      "name": "Bunny Puzzle",
+      "date": "4/4/21"
+    },
+	{
+      "title": "May 2021 Update",
+      "text": "I have posted a new image. This time I am working on the “Puzzle Selection” screen. Yep, I have multiple screens now. I have decided to create some sub-games for unlocking puzzles(videos) and leveling up the number of pieces per puzzle as you get better.\n\nYou level up each puzzle independently. The level of the puzzle multiplied by two is the number of pieces wide and tall. For example, “level 2” is 4x4 pieces and “level 3” is 6x6 pieces and so on. The only exception is “level 1” which is 3x3.\n\nYou start with a single puzzle unlock and you can pick any puzzle you want. After that you unlock a puzzle each time you complete a puzzle level for the first time. For example, when you complete your first “level 1” you get a puzzle unlock. Then when you complete your first “level 2” you get another one. The highest level is “level 8” which is 16x16 pieces which is 256 total pieces.",
+	  "image": "selection.png",
+      "name": "Puzzle Selection Menu",
+      "date": "5/4/21"
     },
 	{
 	"title":"References and Credits"

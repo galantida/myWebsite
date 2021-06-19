@@ -58,21 +58,21 @@
     }
 
     Projects.prototype.getMostRecentProject = function () {
-        console.log("getMostRecentProject");
+        //console.log("getMostRecentProject");
         var projectIndex = this.getMostRecentProjectIndex();
         return this.projects[projectIndex];
     }
 
     Projects.prototype.getMostRecentProjectIndex = function () {
-        console.log("getMostRecentProjectIndex");
+        //console.log("getMostRecentProjectIndex");
         var mostRecentProjectIndex = null;
         var mostRecentUpdated = new Date("1/1/1800");
 
         for (var t = 0; t < this.projects.length; t++) {
             var curUpdated = this.projects[t].updated();
-            console.log("comparing: " + curUpdated + " to " + mostRecentUpdated);
+            //console.log("comparing: " + curUpdated + " to " + mostRecentUpdated);
             if (curUpdated > mostRecentUpdated) {
-                console.log("was newer");
+                //console.log("was newer");
                 mostRecentUpdated = curUpdated;
                 mostRecentProjectIndex = t;
             }
@@ -87,7 +87,6 @@
         var emg = 0;
 
         while (this.projects.length > 0) {
-            console.log("projectsLength" + this.projects.length);
 
             // get most recent project index
             var index = this.getMostRecentProjectIndex();
